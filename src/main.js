@@ -9,5 +9,6 @@ import 'animate.css/animate.min.css'
 import '../src/assets/scss/style.scss'
 import 'swiper/css'
 import 'swiper/css/effect-fade'
+import '../src/assets/css/style.css'
 
 createApp(App).use(router).mount('#app')
