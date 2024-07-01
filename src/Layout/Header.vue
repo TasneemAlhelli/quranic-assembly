@@ -1,8 +1,9 @@
 <script>
 export default {
+  name: 'Header',
   data() {
     return {
-      isSticky: true
+      isSticky: false
     }
   },
   mounted() {
@@ -15,17 +16,7 @@ export default {
       }
     })
   },
-
   methods: {
-    // offcanvas searchbox
-    toggleClass(addRemoveClass, className) {
-      const el = document.querySelector('#search-overlay')
-      if (addRemoveClass === 'addClass') {
-        el.classList.add(className)
-      } else {
-        el.classList.remove(className)
-      }
-    },
     menuCollapseOnLinkClick() {
       document.getElementById('navbarSupportedContent').classList.remove('show')
     }
@@ -40,7 +31,20 @@ export default {
   >
     <div class="container-fluid container-fluid--cp-150">
       <nav class="navbar navbar-expand-lg" id="navbar-example2">
-        <router-link to="/"><img src="" alt="logo" /></router-link>
+        <router-link to="/" class="navbar-brand logo-dark">
+          <img src="../assets/img/logo/logo-dark.png" alt="logo" />
+        </router-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div
           class="collapse navbar-collapse justify-content-center"
@@ -48,13 +52,17 @@ export default {
         >
           <ul class="nav main-menu">
             <li class="nav-item">
-              <a class="nav-link" href="" @click="menuCollapseOnLinkClick">
-                <span>المراكز والشخصيات</span>
+              <a class="nav-link" href="/" @click="menuCollapseOnLinkClick">
+                <span>الصفحة الرئيسية</span>
               </a>
             </li>
-            <li>
-              <a class="nav-link" href="" @click="menuCollapseOnLinkClick">
-                <span>الامسيات القرآنية</span>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/about"
+                @click="menuCollapseOnLinkClick"
+              >
+                <span>من نحن</span>
               </a>
             </li>
           </ul>

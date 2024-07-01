@@ -1,15 +1,19 @@
 <script>
-import Header from '../components/Header.vue'
-import Welcome from '../components/Welcome.vue'
+import Header from '../Layout/Header.vue'
+import Footer from '../Layout/Footer.vue'
+
 export default {
   name: 'HomePage',
   components: {
     Header,
-    Welcome
+    Footer
   }
 }
 </script>
 
 <template>
-  <Welcome />
+  <div class="main-container">
+    <Header />
+    <Footer />
+  </div>
 </template>

@@ -1,14 +1,7 @@
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
 import WOW from 'wow.js'
-
 export default {
-  name: 'App',
-  components: {
-    Header,
-    Footer
-  },
+  name: 'app',
   mounted() {
     new WOW().init()
   }
@@ -16,9 +9,5 @@ export default {
 </script>
 
 <template>
-  <Header />
-  <router-view></router-view>
-  <Footer />
+  <router-view />
 </template>
-
-<style scoped></style>

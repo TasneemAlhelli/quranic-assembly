@@ -29,6 +29,22 @@ body{
   }
 }
 
+.main-container {
+    display: grid;
+    grid-template-rows: 100px 3fr 100px;
+    grid-template-areas: 'header' 'main' 'footer';
+    min-height: 100vh;
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.footer-area-wrapper {
+    grid-area: footer;
+}
+
 h1, h2, h3, h4, h5, h6 {
       color: $heading-text-color;
       font-family: $heading-font-family-name;

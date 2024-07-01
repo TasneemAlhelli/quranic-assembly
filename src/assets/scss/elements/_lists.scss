@@ -131,8 +131,8 @@ ol {
             &::before {
                 content: "";
                 position: absolute;
-                top: 8px;
-                left: -2px;
+                bottom: 8px;
+                right: -2px;
                 content: '';
                 height: 16px;
                 width: 1px;
@@ -143,6 +143,24 @@ ol {
                     display: none;
                 }
             }
+
+        }
+    }
+}
+
+.horizontal-list-display {
+    & ul {
+        & li {
+            display: inline-block;
+            color: $body-text-color;
+            padding: 3px 0 3px 17px;
+            position: relative;
+            &:first-child {
+                &::before {
+                    display: none;
+                }
+            }
+
         }
     }
 }
