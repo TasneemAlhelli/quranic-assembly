@@ -620,6 +620,11 @@ select {
     }
 }
 
+.align-center {
+    align-items: center;
+    justify-content: center;
+}
+
 /* bg body color */
 .bg-body-color {
     background: #3498DB;

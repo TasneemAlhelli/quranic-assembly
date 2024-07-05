@@ -1,6 +1,6 @@
 <script>
-import Header from '../Layout/Header.vue'
-import Footer from '../Layout/Footer.vue'
+import Header from '../layout/Header.vue'
+import Footer from '../layout/Footer.vue'
 
 export default {
   name: 'HomePage',
@@ -14,6 +14,7 @@ export default {
 <template>
   <div class="main-container">
     <Header />
+
     <Footer />
   </div>
 </template>

@@ -1,30 +1,11 @@
 <script>
-import Header from '../Layout/Header.vue'
-import Footer from '../Layout/Footer.vue'
+import Header from '../layout/Header.vue'
+import Footer from '../layout/Footer.vue'
 export default {
   name: 'About',
   components: {
     Header,
     Footer
-  },
-  data() {
-    return {
-      items: [
-        {
-          icon: require('../assets/img/icons/aeroland-app-showcase-box-icon-image-01.png'),
-          heading: 'الرؤية',
-          text: 'نطمح لأن نكون مؤسسة قرآنية جامعة وفاعلة ومعتمدة ومميزة تقدم خدمات نوعية وشاملة في مجال علوم القرآن الكريم لتمثل تجربة رائدة في العمل الإسلامي النسوي.'
-        },
-        {
-          icon: require('../assets/img/icons/aeroland-app-showcase-box-icon-image-02.png'),
-          heading: 'الرسالة',
-          text: 'العمل على نشر علوم القرآن وتأصيل ثقافته، من خلال تقديم خدمات نوعية للجهات المعنية بعلوم القرآن، وتنميتها وتلبية احتياجاتها، وتفعيل أطر التكامل والتنسيق بينها لأداء دورها الرسالي بكفاءة وتميز.'
-        }
-      ],
-      bgImg: {
-        backgroundImage: `url(${require('../assets/img/hero/showcase/showcase-hero-bg.jpg')})`
-      }
-    }
   }
 }
 </script>
