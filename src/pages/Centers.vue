@@ -1,7 +1,7 @@
 <script>
 import Header from '../layout/Header.vue'
 import Footer from '../layout/Footer.vue'
-import { getCenters } from '../services/centers'
+import { index } from '../services/centers'
 
 export default {
   name: 'Centers',
@@ -19,8 +19,11 @@ export default {
   },
   methods: {
     async getAllCenters() {
-      const centers = await getCenters()
+      const centers = await index()
       this.centers = centers
+    },
+    showCenter(id) {
+      this.$router.push(`/centers/${id}`)
     }
   }
 }
@@ -52,22 +55,26 @@ export default {
               v-for="center in centers"
               :key="center.id"
             >
-              <div class="portfolio-grid-caption">
-                <router-link to="/" class="single-grid-caption">
-                  <div class="single-portfolio__thumbnail">
-                    <img
-                      class="img-fluid"
-                      src="https://img.freepik.com/free-photo/high-angle-students-learning-library_23-2149647043.jpg"
-                      alt="portfolio.alt"
-                    />
-                  </div>
-                </router-link>
+              <div
+                class="portfolio-grid-caption"
+                @click="showCenter(center.id)"
+              >
+                <div class="single-portfolio__thumbnail">
+                  <img
+                    class="img-fluid"
+                    src="https://img.freepik.com/free-photo/high-angle-students-learning-library_23-2149647043.jpg"
+                    alt="portfolio.alt"
+                  />
+                </div>
                 <div class="post-info">
                   <!-- <div class="post-categories">
                     <router-link to="">مركز المارج</router-link>
                   </div> -->
-                  <h5 class="post-title font-weight--bold">
-                    <router-link to="/">{{ center.name }}</router-link>
+                  <h5
+                    class="post-title font-weight--bold"
+                    @click="showCenter(center.id)"
+                  >
+                    {{ center.name }}
                   </h5>
                 </div>
               </div>
