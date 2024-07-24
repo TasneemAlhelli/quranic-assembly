@@ -68,6 +68,15 @@ export default {
             <li class="nav-item">
               <a
                 class="nav-link"
+                href="/achievements"
+                @click="menuCollapseOnLinkClick"
+              >
+                <span>الانجازات</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
                 href="/about"
                 @click="menuCollapseOnLinkClick"
               >
