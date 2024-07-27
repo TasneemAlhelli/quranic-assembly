@@ -77,6 +77,15 @@ export default {
             <li class="nav-item">
               <a
                 class="nav-link"
+                href="/timeline"
+                @click="menuCollapseOnLinkClick"
+              >
+                <span>سجل الحراك القرآني</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
                 href="/about"
                 @click="menuCollapseOnLinkClick"
               >

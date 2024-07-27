@@ -101,6 +101,28 @@ export default {
                   </div>
                 </div>
               </div>
+              <div class="col-lg-12 wow move-up">
+                <div class="grid-item animate">
+                  <div class="ht-box-icon style-01">
+                    <div class="icon-box-wrap">
+                      <div class="content">
+                        <h5 class="heading">ورقة بحث مؤتمر المرأة المسلمة</h5>
+                        <div class="row aling-items-center">
+                          <div class="col-md-12">
+                            <!-- require('../assets/img/pricing/aeroland-branding-pricing-image-02.png') -->
+                            <a
+                              href="../assets/documents/islamic-women.pdf"
+                              download
+                            >
+                              مؤتمر المرأة المسلمة
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +142,7 @@ export default {
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseOne"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           aria-controls="collapseOne"
                         >
                           أهمية المجمع القرآني النسوي في البحرين
@@ -171,7 +193,7 @@ export default {
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseTwo"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           aria-controls="collapseTwo"
                         >
                           الأهداف الاستراتيجية للمجمع القرآني النسوي
@@ -219,7 +241,7 @@ export default {
                           type="button"
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseThree"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           aria-controls="collapseThree"
                         >
                           استراتيجية المجمع القرآني النسوي في تحقيق أهدافه
