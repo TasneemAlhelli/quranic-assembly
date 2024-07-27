@@ -5,6 +5,7 @@ import Centers from '../pages/Centers.vue'
 import Center from '../pages/Center.vue'
 import Achievements from '../pages/Achievements.vue'
 import Timeline from '../pages/Timeline.vue'
+import Soiarees from '../pages/Soiaress.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/timeline',
     name: 'Timeline',
     component: Timeline
+  },
+  {
+    path: '/soiaress',
+    name: 'Soiaress',
+    component: Soiarees
   }
 ]
 
