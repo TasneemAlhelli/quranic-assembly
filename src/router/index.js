@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage.vue'
 import Centers from '../pages/Centers.vue'
 import Center from '../pages/Center.vue'
 import Achievements from '../pages/Achievements.vue'
+import Timeline from '../pages/Timeline.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/achievements',
     name: 'Achievements',
     component: Achievements
+  },
+  {
+    path: '/timeline',
+    name: 'Timeline',
+    component: Timeline
   }
 ]
 
