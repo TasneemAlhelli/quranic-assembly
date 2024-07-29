@@ -35,7 +35,7 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h2 class="breadcrumb-title">الانجازات</h2>
+                <h2 class="breadcrumb-title">إنجازات المجمع القرآني النسوي</h2>
               </div>
             </div>
           </div>

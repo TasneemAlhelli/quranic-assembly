@@ -32,7 +32,7 @@ export default {
     <div class="container-fluid container-fluid--cp-150">
       <nav class="navbar navbar-expand-lg" id="navbar-example2">
         <router-link to="/" class="navbar-brand logo-dark">
-          <img src="../assets/img/logo/logo-dark.png" alt="logo" />
+          <img src="../assets/img/logo.png" alt="logo" />
         </router-link>
         <button
           class="navbar-toggler"
@@ -71,7 +71,7 @@ export default {
                 href="/achievements"
                 @click="menuCollapseOnLinkClick"
               >
-                <span>الانجازات</span>
+                <span>إنجازات المجمع القرآني</span>
               </a>
             </li>
             <li class="nav-item">
