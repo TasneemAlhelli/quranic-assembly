@@ -38,7 +38,9 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h2 class="breadcrumb-title">دليل المراكز والمؤسسات</h2>
+                <h2 class="breadcrumb-title">
+                  دليل المؤسسات والمراكز القرآنية النسوية في البحرين
+                </h2>
               </div>
             </div>
           </div>
@@ -62,7 +64,7 @@ export default {
                 <div class="single-portfolio__thumbnail">
                   <img
                     class="img-fluid"
-                    src="https://img.freepik.com/free-photo/high-angle-students-learning-library_23-2149647043.jpg"
+                    src="@/assets/img/centers-default.png"
                     alt="portfolio.alt"
                   />
                 </div>

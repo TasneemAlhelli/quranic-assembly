@@ -44,17 +44,17 @@ export default {
       <div class="blog-pages-wrapper section-space--ptb_30">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="portfolio-details-one-images">
                 <img
                   class="img-fluid border-radus-5"
-                  src="@/assets/img/portfolio/portfolio-01-670x479.jpg"
-                  alt="image"
+                  src="@/assets/img/centers-default.png"
+                  alt="center logo"
                 />
               </div>
             </div>
 
-            <div class="col-lg-10">
+            <div class="col-lg-8">
               <div class="main-blog-wrap">
                 <div class="single-blog-item">
                   <div class="post-info lg-blog-post-info wow move-up">
@@ -65,13 +65,14 @@ export default {
                     <div class="post-meta mt-20">
                       <div class="post-date">
                         <span class="far fa-calendar meta-icon"></span>
+                        <span style="font-weight: bold">تاريخ التأسيس: </span>
                         {{ center.founded }}
                       </div>
                       <div class="post-comments">
-                        <span class="far fa-comment-alt meta-icon"></span>
-                        <router-link to="" class="smooth-scroll-link">{{
-                          center.founder
-                        }}</router-link>
+                        <span class="fa fa-user meta-icon"></span>
+                        <span style="font-weight: bold">المؤسس: </span>
+
+                        {{ center.founder }}
                       </div>
                     </div>
 
@@ -118,21 +119,21 @@ export default {
                       </li>
                       <li>
                         <a
-                          class="hint--bounce hint--top hint--primary twitter"
+                          class="hint--bounce hint--top hint--primary email"
                           target="_blank"
-                          aria-label="Twitter"
-                          href="https://twitter.com/"
+                          aria-label="Email"
+                          :href="'https://instagram.com/' + center.email"
                         >
                           {{ center.email }}
-                          <i class="fab fa-twitter"></i>
+                          <i class="fa fa-envelope"></i>
                         </a>
                       </li>
                       <li>
                         <a
-                          class="hint--bounce hint--top hint--primary facebook"
+                          class="hint--bounce hint--top hint--primary instagram"
                           target="_blank"
-                          aria-label="Facebook"
-                          href="https://www.facebook.com/"
+                          aria-label="Instagram"
+                          :href="'https://instagram.com/' + center.instagram"
                         >
                           {{ center.instagram }}
                           <i class="fab fa-instagram"></i>
