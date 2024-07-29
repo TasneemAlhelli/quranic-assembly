@@ -62,7 +62,7 @@ export default {
                 href="/centers"
                 @click="menuCollapseOnLinkClick"
               >
-                <span>دليل المراكز والمؤسسات</span>
+                <span>دليل المؤسسات والمراكز القرآنية</span>
               </a>
             </li>
             <li class="nav-item">
