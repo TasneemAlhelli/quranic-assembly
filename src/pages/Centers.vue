@@ -38,9 +38,16 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h2 class="breadcrumb-title">
-                  دليل المؤسسات والمراكز القرآنية النسوية في البحرين
-                </h2>
+                <h4 class="breadcrumb-title">
+                  دليل المؤسسات والمراكز القرآنية النسوية
+                </h4>
+                <ul class="breadcrumb-list">
+                  <li>
+                    <router-link to="/">الصفحة الرئيسية</router-link>
+                  </li>
+                  /
+                  <li class="active">المراكز والمؤسسات القرآنية</li>
+                </ul>
               </div>
             </div>
           </div>
