@@ -1,7 +1,6 @@
 <script>
 import Header from '../layout/Header.vue'
 import Footer from '../layout/Footer.vue'
-import image from '/Users/tasneemalhelli/Desktop/Projects/quranic-assembly/src/assets/img/blog/blog-01-770x420.jpg'
 export default {
   name: 'About',
   components: {
