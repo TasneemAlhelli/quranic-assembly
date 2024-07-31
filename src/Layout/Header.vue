@@ -56,33 +56,37 @@ export default {
                 <span>الصفحة الرئيسية</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/centers"
-                @click="menuCollapseOnLinkClick"
+            <li class="nav-item dropdown">
+              <router-link
+                to=""
+                class="nav-link dropdown-toggle"
+                id="homes"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <span>دليل المؤسسات والمراكز القرآنية</span>
-              </a>
+                <span>المجمع القرآني</span>
+              </router-link>
+              <ul class="dropdown-menu" aria-labelledby="homes">
+
+                <li>
+                  <router-link to="/centers" class="dropdown-item"
+                    >دليل المؤسسات والمراكز القرآنية</router-link
+                  >
+                </li>
+                <li>
+                  <router-link to="/achievements" class="dropdown-item"
+                    >إنجازات المجمع القرآني</router-link
+                  >
+                </li>
+                <li>
+                  <router-link to="/soiaress" class="dropdown-item"
+                    >الأمسيات القرآنية</router-link
+                  >
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/achievements"
-                @click="menuCollapseOnLinkClick"
-              >
-                <span>إنجازات المجمع القرآني</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="/soiaress"
-                @click="menuCollapseOnLinkClick"
-              >
-                <span>الأمسيات القرآنية</span>
-              </a>
-            </li>
+
             <li class="nav-item">
               <a
                 class="nav-link"
