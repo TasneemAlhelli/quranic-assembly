@@ -574,10 +574,10 @@ select {
 .breadcrumb-area {
     border-bottom-width: 0px;
     border-bottom-color: rgba(0, 0, 0, 0);
-    padding-top: 196px;
-    padding-bottom: 114px;
+    padding-top: 100px;
+    padding-bottom: 80px;
     @media #{$large-mobile,$tablet-device,$desktop-device}{
-        padding-top: 130px;
+        padding-top: 100px;
         padding-bottom: 80px;
     }
 }

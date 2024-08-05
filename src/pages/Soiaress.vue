@@ -35,7 +35,14 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h2 class="breadcrumb-title">الأمسيات القرآنية</h2>
+                <h4 class="breadcrumb-title">الأمسيات القرآنية</h4>
+                <ul class="breadcrumb-list">
+                  <li>
+                    <router-link to="/">الصفحة الرئيسية</router-link>
+                  </li>
+                  /
+                  <li class="active">الأمسيات القرآنية</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -53,10 +60,7 @@ export default {
               :key="soiaree.key"
             >
               <div class="portfolio-wrapper mb-30">
-                <router-link
-                  to="portfolio-details"
-                  class="single-portfolio-item"
-                >
+                <div class="single-portfolio-item">
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
@@ -68,16 +72,15 @@ export default {
                   <div class="single-portfolio__content">
                     <div class="post-overlay-info">
                       <h4 class="post-overlay-title text-white">
-                        {{ soiaree.name }} 
-                        <br/>
+                        {{ soiaree.name }}
+                        <br />
                         {{ soiaree.date }}
-                        <br/>
+                        <br />
                         {{ soiaree.place }}
-
                       </h4>
                     </div>
                   </div>
-                </router-link>
+                </div>
               </div>
             </div>
 

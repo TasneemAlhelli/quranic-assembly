@@ -6,6 +6,17 @@ export default {
   components: {
     Header,
     Footer
+  },
+  methods: {
+    async download() {
+      const link = document.createElement('a')
+      link.href = '/docs/islamic-women.pdf'
+      link.download = 'مؤتمر المرأة المسلمة.pdf'
+
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
   }
 }
 </script>
@@ -19,9 +30,16 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h2 class="breadcrumb-title">
+                <h4 class="breadcrumb-title">
                   هوية و نشأة المجمع القرآني النسوي في البحرين
-                </h2>
+                </h4>
+                <ul class="breadcrumb-list">
+                  <li>
+                    <router-link to="/">الصفحة الرئيسية</router-link>
+                  </li>
+                  /
+                  <li class="active">من نحن</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -106,16 +124,12 @@ export default {
                   <div class="ht-box-icon style-01">
                     <div class="icon-box-wrap">
                       <div class="content">
-                        <h5 class="heading">ورقة بحث مؤتمر المرأة المسلمة</h5>
+                        <h5 class="heading">مؤتمر المرأة المسلمة</h5>
                         <div class="row aling-items-center">
                           <div class="col-md-12">
-                            <!-- require('../assets/img/pricing/aeroland-branding-pricing-image-02.png') -->
-                            <a
-                              href="../assets/documents/islamic-women.pdf"
-                              download
-                            >
-                              مؤتمر المرأة المسلمة
-                            </a>
+                            <div class="text download" @click="download()">
+                              تحميل ورقة بحث مؤتمر المرأة المسلمة
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -294,3 +308,32 @@ export default {
     <Footer />
   </div>
 </template>
+
+<style scoped>
+.download {
+  position: relative;
+  cursor: pointer;
+  color: blue;
+  /* text-decoration: underline; */
+  &::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    position: absolute;
+    left: auto;
+    right: 0;
+    z-index: -1;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+    background: currentColor;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+      left: 0;
+      right: auto;
+      z-index: 0;
+    }
+  }
+}
+</style>
