@@ -6,6 +6,8 @@ import Center from '../pages/Center.vue'
 import Achievements from '../pages/Achievements.vue'
 import Timeline from '../pages/Timeline.vue'
 import Soiarees from '../pages/Soiaress.vue'
+import Competitions from '../pages/Competitions.vue'
+import Competition from '../pages/Competition.vue'
 
 const routes = [
   {
@@ -42,6 +44,16 @@ const routes = [
     path: '/soiaress',
     name: 'Soiaress',
     component: Soiarees
+  },
+  {
+    path: '/competitions',
+    name: 'Competitions',
+    component: Competitions
+  },
+  {
+    path: '/competitions/:id',
+    name: 'Competition',
+    component: Competition
   }
 ]
 

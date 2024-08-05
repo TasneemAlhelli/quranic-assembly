@@ -84,6 +84,11 @@ export default {
                     >الأمسيات القرآنية</router-link
                   >
                 </li>
+                <li>
+                  <router-link to="/competitions" class="dropdown-item"
+                    >المسابقات القرآنية</router-link
+                  >
+                </li>
               </ul>
             </li>
 
