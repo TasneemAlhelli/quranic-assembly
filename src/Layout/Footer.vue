@@ -30,7 +30,7 @@ export default {
                   <a
                     href="mailto:demo@example.com"
                     class="hover-style-link hover-style-link--white"
-                    >demo@example.com
+                    >m.qurani.n.bh@gmail.com
                   </a>
                 </li>
               </ul>

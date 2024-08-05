@@ -60,10 +60,7 @@ export default {
               :key="soiaree.key"
             >
               <div class="portfolio-wrapper mb-30">
-                <router-link
-                  to="portfolio-details"
-                  class="single-portfolio-item"
-                >
+                <div class="single-portfolio-item">
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
@@ -75,16 +72,15 @@ export default {
                   <div class="single-portfolio__content">
                     <div class="post-overlay-info">
                       <h4 class="post-overlay-title text-white">
-                        {{ soiaree.name }} 
-                        <br/>
+                        {{ soiaree.name }}
+                        <br />
                         {{ soiaree.date }}
-                        <br/>
+                        <br />
                         {{ soiaree.place }}
-
                       </h4>
                     </div>
                   </div>
-                </router-link>
+                </div>
               </div>
             </div>
 
