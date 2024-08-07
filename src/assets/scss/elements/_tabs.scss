@@ -47,7 +47,7 @@
     & .ht-service-box--three {
         padding: 41px 30px 45px 42px;
         border: 1px solid rgba(182, 183, 210, 0.5);
-        box-shadow: 0 10px 40px 5px rgba(89, 69, 230, 0.05);
+        box-shadow: 0 10px 40px 5px #D1D1D1;
         background: #fff;
         border-radius: 5px;
         &:hover {
@@ -95,7 +95,7 @@
             font-size: 32px;
             border-radius: 15px;
             color: #fff;
-            box-shadow: 0 15px 50px rgba(89, 69, 230, 0.12);
+            box-shadow: 0 15px 50px #D1D1D1;
             margin-right: 30px;
         }
         & h5 {

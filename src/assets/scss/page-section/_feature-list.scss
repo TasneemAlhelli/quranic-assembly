@@ -123,7 +123,7 @@
     .single-feature-icon{
         display: flex;
         padding: 41px 22px 45px;
-        box-shadow: 0 10px 40px 5px rgba(89, 69, 230, 0.05);
+        box-shadow: 0 10px 40px 5px #D1D1D1;
         background: #fff;
         border-radius: 5px;
         margin-bottom: 25px;
@@ -135,7 +135,7 @@
 
         &:hover{
             transform: translateY(-5px);
-            box-shadow: 0 10px 50px 5px rgba(89, 69, 230, 0.1);
+            box-shadow: 0 10px 50px 5px #D1D1D1;
         }
         &__media{
             flex-shrink: 0;

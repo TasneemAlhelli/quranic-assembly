@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="footer-area-wrapper reveal-footer default-bg">
+  <div class="footer-area-wrapper reveal-footer theme_bg">
     <div
       class="footer-copyright-area section-space--pt_60"
     >

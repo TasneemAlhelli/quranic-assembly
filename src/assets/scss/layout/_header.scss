@@ -135,11 +135,11 @@
 }
 
 .header-button.button--white > a.btn {
-    color: #5945e6;
+    color: #9BC9B6;
 }
 .header-area.is-sticky .header-button.button--white > a.btn {
-    color: #5945e6;
-    border: 2px solid #5945e6;
+    color: #9BC9B6;
+    border: 2px solid #9BC9B6;
 }
 
 .header-area {
@@ -244,8 +244,8 @@
         width: 400px;
         height: 100%;
         cursor: default;
-        background-color: #5E61E7;
-        background-image: linear-gradient(138deg,#5E61E7 0,#9C7AF2 100%);
+        background-color: #679499;
+        background-image: linear-gradient(138deg,#679499 0,$theme-color--default 100%);;
         transition: $transition--default;
         overflow-y: auto;
 

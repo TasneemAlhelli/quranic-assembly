@@ -144,7 +144,7 @@
     
     & .post-read-more {
         & .btn-read-more {
-            color: #6d70a6;
+            color: #347176;
             font-weight: 500;
             &::before {
                 content: '';
@@ -324,7 +324,7 @@ blockquote {
     border-left: 2px solid #eee;
     border-left-color: #38cb89;
     position: relative;
-    color: #6d70a6;
+    color: #347176;
     @media #{$large-mobile}{
         margin: 54px 65px 44px 30px !important;
     }
@@ -361,8 +361,8 @@ blockquote {
     & .share-media {
         & .share-icon {
             color: #fff;
-            background-color: #9C7AF2;
-            background-image: linear-gradient(-129deg,#9C7AF2 0,#5E61E7 100%);
+            background-color: #004C54;
+            background-image: linear-gradient(-129deg,#004C54 0,#347176 100%);
             height: 48px;
             width: 48px;
             line-height: 48px;
@@ -371,7 +371,7 @@ blockquote {
             text-align: center;
             cursor: pointer;
             color: #fff;
-            background-color: #9c7af2;
+            background-color: #004C54;
         }
     }
     & .share-media {
@@ -565,7 +565,7 @@ blockquote {
     & .comment-actions a {
         margin-right: 20px;
         font-weight: 500;
-        color: #6d70a6;
+        color: #347176;
         &::before {
             content: '\f3e5';
             opacity: .5;
@@ -607,7 +607,7 @@ blockquote {
         
         position: relative;
         padding: 48px 40px;
-        background: #5945e6;
+        background: #9BC9B6;
         text-align: center;
         &::before {
             display: none;

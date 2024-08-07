@@ -77,12 +77,12 @@
     position: relative;
 }
 .app-showcase-step-wrap {
-    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#F8F8F8),color-stop(50%,#ECEEFA),color-stop(100%,#E3E9FF));
-    background: -moz-linear-gradient(180deg,#F8F8F8 0,#ECEEFA 50%,#E3E9FF 100%);
-    background: -webkit-linear-gradient(180deg,#F8F8F8 0,#ECEEFA 50%,#E3E9FF 100%);
-    background: -o-linear-gradient(180deg,#F8F8F8 0,#ECEEFA 50%,#E3E9FF 100%);
-    background: -ms-linear-gradient(180deg,#F8F8F8 0,#ECEEFA 50%,#E3E9FF 100%);
-    background: linear-gradient(180deg,#F8F8F8 0,#ECEEFA 50%,#E3E9FF 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#F8F8F8),color-stop(50%,#ccdbde),color-stop(100%,#E3E9FF));
+    background: -moz-linear-gradient(180deg,#F8F8F8 0,#ccdbde 50%,#E3E9FF 100%);
+    background: -webkit-linear-gradient(180deg,#F8F8F8 0,#ccdbde 50%,#E3E9FF 100%);
+    background: -o-linear-gradient(180deg,#F8F8F8 0,#ccdbde 50%,#E3E9FF 100%);
+    background: -ms-linear-gradient(180deg,#F8F8F8 0,#ccdbde 50%,#E3E9FF 100%);
+    background: linear-gradient(180deg,#F8F8F8 0,#ccdbde 50%,#E3E9FF 100%);
 }
 .feature-app-showcase {
     & .app-showcase-image__media {

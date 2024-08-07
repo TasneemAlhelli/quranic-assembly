@@ -55,7 +55,7 @@
 
     &__inner{
         &--bg-blue{
-            background: #5945e6;
+            background: #9BC9B6;
         }
         &--bg-green{
             background: #38cb89;
@@ -109,12 +109,12 @@
     }
 
     &--blue{
-        background-color: #9C7AF2;
-        background-image: linear-gradient(-224deg,#9C7AF2 0,#5E61E7 100%);
+        background-color: #004C54;
+        background-image: linear-gradient(-224deg,#004C54 0,#347176 100%);
     }
 
     &--bg-blue{
-        background: #5945e6;
+        background: #9BC9B6;
         box-shadow: 0 2px 17px rgba(89,69,230,0.27);
     }
     &--bg-green {
@@ -182,8 +182,8 @@
     }
     &--blue {
         &::after {
-            background-color: #9c7af2;
-            background-image: linear-gradient(-224deg,#9c7af2,#5e61e7);
+            background-color: #004C54;
+            background-image: linear-gradient(-224deg,#004C54,#347176);
         }
     }
 }

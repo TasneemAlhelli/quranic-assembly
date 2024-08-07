@@ -93,7 +93,7 @@
         border-radius: 40px;
         font-size: 34px;
         background: $white;
-        box-shadow: 0 15px 50px rgba(89, 69, 230, 0.12);
+        box-shadow: 0 15px 50px #D1D1D1;
         margin: 0 auto 52px;
         color: $theme-color--green;
         transition: $transition--default;
@@ -110,7 +110,7 @@
     }
 
     &__title{
-        color: #6d70a6;
+        color: #347176;
         margin-bottom: 14px;
     }
 
