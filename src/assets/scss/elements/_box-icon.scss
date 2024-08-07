@@ -22,7 +22,7 @@
             }
             & .content {
                 & .heading{
-                    color: #6d70a6;
+                    color: #347176;
                     margin-bottom: 15px;
                 }
                 & .service_text{
@@ -34,7 +34,7 @@
             .icon-box-wrap {
                 transform: translateY(-5px);
                 background: #fff;
-                box-shadow: 0 10px 50px 5px rgba(89, 69, 230, 0.1);
+                box-shadow: 0 10px 50px 5px #D1D1D1;
             }
         }
     }
@@ -105,7 +105,7 @@
         &:hover {
                 transform: translateY(-5px);
                 background: #fff;
-                box-shadow: 0 10px 50px 5px rgba(89, 69, 230, 0.1);
+                box-shadow: 0 10px 50px 5px #D1D1D1;
         }
     }
 }
@@ -160,8 +160,8 @@
                     bottom: 0;
                     background: #fff;
                     border-radius: 5px;
-                    background-color: #9C7AF2;
-                    background-image: linear-gradient(-138deg,#9C7AF2 0,#5E61E7 100%);
+                    background-color: #004C54;
+                    background-image: linear-gradient(-138deg,#004C54 0,#679499 100%);
                     opacity: 0;
                     visibility: hidden;
                 }
@@ -222,12 +222,12 @@
     }
     margin-bottom: 25px;
     & .sub-heading {
-        color: #6d70a6;
+        color: #347176;
         margin-bottom: 10px;
         font-size: 15px;
     }
     & .heading{
-        color: #6d70a6;
+        color: #347176;
         margin-bottom: 15px;
     }
     & .service_text{
@@ -305,7 +305,7 @@
             transition: $transition--default;
         }
         & .heading {
-            color: #6d70a6;
+            color: #347176;
         }
     }
     & .content-body {

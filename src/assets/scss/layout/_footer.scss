@@ -110,8 +110,8 @@
 }
 
 .bg_drak-footer {
-    background: #242659;
-    border-top: 3px solid #5556ca;
+    background: $theme-color--default;
+    border-top: 3px solid #347176;
 
     & .footer-widget {
         &__title {
@@ -205,7 +205,7 @@
 
 .ebook-footer {
     & .horizontal-list ul li {
-        color: #6d70a6;
+        color: #347176;
 
         &::before {
             content: "";
@@ -215,21 +215,21 @@
             content: '';
             height: 16px;
             width: 1px;
-            background: #6d70a6;
+            background: #347176;
         }
     }
 
     & .ht-social-networks.tilte-style {
         .link-text {
             &::before {
-                background: rgba(89, 69, 230, 0.2);
+                background: #D1D1D1;
             }
 
             &:hover {
                 color: $theme-color--default;
 
                 &::after {
-                    background-color: rgba(89, 69, 230, 0.2);
+                    background-color: #D1D1D1;
                 }
             }
 
@@ -269,7 +269,7 @@
     padding: 19px 20px 25px;
     margin-bottom: 25px;
     word-wrap: break-word;
-    background-color: rgba(89, 69, 230, 0.05);
+    background-color: #D1D1D1;
 }
 
 .tweet__text a {
@@ -278,7 +278,7 @@
 }
 
 .tweet__text a:hover {
-    color: #5945e6;
+    color: #9BC9B6;
 }
 
 .tweet__text:after {
@@ -320,7 +320,7 @@
 
 .tweet__info:before {
     content: '\f099';
-    color: #5945e6;
+    color: #9BC9B6;
     display: block;
     font-size: 18px;
     line-height: 1;

@@ -4,7 +4,7 @@
 .clinic-hero-wrapper {
     overflow: hidden;
     padding: 205px 0 110px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFF), color-stop(80%, #ECEEFA));
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFF), color-stop(80%, #ccdbde));
     // responsive
     @media #{$desktop-device, $tablet-device}{
         padding: 150px 0 110px;
@@ -20,7 +20,7 @@
     }
     & .sub-text {
         line-height: 1.78;
-        color: #6d70a6;
+        color: #347176;
         font-size: 18px;
     }
 }

@@ -19,7 +19,7 @@
 }
 .progress-charts {
     & .heading {
-        color: #6d70a6;
+        color: #347176;
         margin-bottom: 12px;
         font-weight: 400;
     }
@@ -33,9 +33,9 @@
         
         & .progress-bar {
             position: relative;
-            background-color: #9C7AF2;
-            background-image: linear-gradient(-224deg,#9C7AF2 0,#5E61E7 100%);
-            color: #5E61E7;
+            background-color: #004C54;
+            background-image: linear-gradient(-224deg,#004C54 0,#347176 100%);
+            color: #347176;
 
             &::after,&::before {
                 content: '';
@@ -107,8 +107,8 @@
 
             }
             & .progress-bar {
-                background-color: #9C7AF2;
-                background-image: linear-gradient(-224deg,#9C7AF2 0,#5E61E7 100%);
+                background-color: #004C54;
+                background-image: linear-gradient(-224deg,#004C54 0,#347176 100%);
                 position: relative;
                 top: auto;
                 bottom: auto;
@@ -167,7 +167,7 @@
                 
             }
             & .progress-bar {
-                background-image: radial-gradient(ellipse at center,#5945e6 50%,transparent 55%);
+                background-image: radial-gradient(ellipse at center,#9BC9B6 50%,transparent 55%);
                 position: relative;
                 top: auto;
                 bottom: auto;
@@ -184,7 +184,7 @@
                     right: -30px;
                     display: block;
                     font-size: 12px;
-                    color: #5E61E7;
+                    color: #347176;
                 }
             }
         }

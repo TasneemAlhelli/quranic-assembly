@@ -12,7 +12,7 @@
         left: 50%;
         margin-left: -1px;
         height: 100%;
-        border-left: 2px dashed rgba(89, 69, 230, 0.5);
+        border-left: 2px dashed #D1D1D1;
         @media #{$large-mobile}{
             left: 26px;
         }
@@ -97,7 +97,7 @@
         &::after , &::before {
             content: '';
             position: absolute;
-            background: #5945e6;
+            background: #9BC9B6;
             border-radius: 50%;
             top: 50%;
             left: 50%;
@@ -121,7 +121,7 @@
             width: 16px;
             height: 16px;
             border-radius: 50%;
-            background-image: linear-gradient(-218deg, #9c7af2 0%, #5e61e7 100%);
+            background-image: linear-gradient(-218deg, #004C54 0%, #347176 100%);
             z-index: 2;
         }
         

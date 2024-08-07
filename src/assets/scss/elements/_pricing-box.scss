@@ -107,7 +107,7 @@
 
         &:hover{
             .pricing-table__inner{
-                box-shadow: 0 2px 30px rgba(89, 69, 230, 0.12);
+                box-shadow: 0 2px 30px #D1D1D1;
                 border: 0 solid transparent;
                 padding: 35px 21px 41px;
                 transform: translateY(-5px);
@@ -116,7 +116,7 @@
 
         &--popular{
             .pricing-table__inner{
-                box-shadow: 0 2px 30px rgba(89, 69, 230, 0.12);
+                box-shadow: 0 2px 30px #D1D1D1;
                 border: 0 solid transparent;
                 padding: 35px 21px 41px;
             }
@@ -194,7 +194,7 @@
 
         &__list{
             li{
-                color: #6d70a6;
+                color: #347176;
             }
         }
 

@@ -62,12 +62,12 @@
 }
 .lg-actions {
     & button {
-        background-image: linear-gradient(218deg,#5E61E7 0,#9C7AF2 50%,#5E61E7 100%);
+        background-image: linear-gradient(218deg,#347176 0,#004C54 50%,#347176 100%);
         background-size: 200% auto;
         background-position: left center;
         color: $white !important;
         &:hover {
-            background-image: linear-gradient(218deg,#5E61E7 0,#9C7AF2 50%,#5E61E7 100%);
+            background-image: linear-gradient(218deg,#347176 0,#004C54 50%,#347176 100%);
             background-position: right center;
         }
     }
@@ -78,7 +78,7 @@
     &__item {
         position: relative; 
         & .ht-overlay {
-            background-color: #5945e6;
+            background-color: #9BC9B6;
             position: absolute;
             top: 0;
             left: 0;
