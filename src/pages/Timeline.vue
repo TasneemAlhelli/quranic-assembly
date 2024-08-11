@@ -11,7 +11,7 @@ export default {
     return {
       timeline_events: [
         {
-          color: '#fbca3e',
+          color: '#004C54',
           date: '1997',
           title: '',
           description: [
@@ -19,7 +19,7 @@ export default {
           ]
         },
         {
-          color: '#41516c',
+          color: '#E5E0AE',
           date: '1999',
           title: '',
           description: [
@@ -27,7 +27,7 @@ export default {
           ]
         },
         {
-          color: '#e24a68',
+          color: '#347176',
           date: '2000',
           title: 'مشروع التحفيظ',
           description: [
@@ -35,7 +35,7 @@ export default {
           ]
         },
         {
-          color: '#1b5f8c',
+          color: '#eae7be',
           date: '2002',
           title: '',
           description: [
@@ -44,7 +44,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#679499',
           date: '2004',
           title: '',
           description: [
@@ -53,7 +53,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#f0eccf',
           date: '2005',
           title: '',
           description: [
@@ -61,7 +61,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#9ab7bb',
           date: '2007',
           title: '',
           description: [
@@ -74,7 +74,7 @@ export default {
           }
         },
         {
-          color: '#4cadad',
+          color: '#f5f2df',
           date: '2008',
           title: '',
           description: [
@@ -83,7 +83,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#ccdbde',
           date: '2011',
           title: '',
           description: [
@@ -95,7 +95,7 @@ export default {
           }
         },
         {
-          color: '#4cadad',
+          color: '#f9f9ef',
           date: '2012',
           title: '',
           description: [
@@ -103,7 +103,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#9ab7bb',
           date: '2016',
           title: '',
           description: [
@@ -111,7 +111,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#f5f2df',
           date: '2017',
           title: '',
           description: [
@@ -119,7 +119,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#679499',
           date: '2018',
           title: '',
           description: [
@@ -127,7 +127,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#f0eccf',
           date: '2019',
           title: '',
           description: [
@@ -135,7 +135,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#347176',
           date: '2022',
           title: '',
           description: [
@@ -143,7 +143,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#eae7be',
           date: '2023',
           title: '',
           description: [
@@ -151,7 +151,7 @@ export default {
           ]
         },
         {
-          color: '#4cadad',
+          color: '#004C54',
           date: '2024',
           title: '',
           description: [

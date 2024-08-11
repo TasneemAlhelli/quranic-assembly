@@ -118,7 +118,7 @@ export default {
                       </li>
                       <li class="item">
                         <div class="name">
-                          <h6>ارقام التواصل</h6>
+                          <h6>أرقام التواصل</h6>
                         </div>
                         <div class="value">
                           <span v-if="center.contacts">{{
