@@ -29,8 +29,9 @@
             }
             .nav-link {
                 display: block;
-                font-size: 14px;
+                font-size: 18px;
                 font-weight: 500;
+                font-family: 'Lama Sans Medium';
                 letter-spacing: 1px;
                 padding: 50px 26px;
                 color: inherit;
@@ -201,7 +202,7 @@
         z-index: 999;
         transition: $transition--default;
         box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
-        background-color: $white;
+        background-color: #f5f2df;
         .main-menu {
             li {
                 .nav-link {

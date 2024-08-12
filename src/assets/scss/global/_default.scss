@@ -582,6 +582,10 @@ select {
     }
 }
 
+.breadcrumb-title {
+    font-family: 'Lama Sans Bold';
+}
+
 .breadcrumb-list {
     margin-top: 15px;
     & li {
@@ -593,6 +597,7 @@ select {
         text-transform: uppercase;
         & a {
             position: relative;
+            color: #ccdbde;
             &::after {
                 content: '';
                 width: 0;
@@ -615,7 +620,7 @@ select {
             }
         }
         &.active {
-            color: #347176;
+            color: #f5f2df;
         }
     }
 }

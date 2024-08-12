@@ -9,7 +9,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', () => {
       let scroll = window.scrollY
-      if (scroll >= 200) {
+      if (scroll >= 50) {
         this.isSticky = true
       } else {
         this.isSticky = false

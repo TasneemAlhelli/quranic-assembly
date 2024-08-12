@@ -35,7 +35,7 @@ export default {
                 </h4>
                 <ul class="breadcrumb-list">
                   <li>
-                    <router-link to="/">الصفحة الرئيسية</router-link>
+                    <router-link to="/r">الصفحة الرئيسية</router-link>
                   </li>
                   /
                   <li class="active">من نحن</li>
@@ -313,7 +313,7 @@ export default {
 .download {
   position: relative;
   cursor: pointer;
-  color: blue;
+  color: #9BC9B6;
   /* text-decoration: underline; */
   &::after {
     content: '';

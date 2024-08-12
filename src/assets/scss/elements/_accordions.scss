@@ -24,6 +24,7 @@
         padding: 0;
         border-bottom: 0;
         background-color: $white;
+        font-family: 'Lama Sans bold';
 
         .accordion-button {
             border: none;
@@ -38,7 +39,7 @@
             line-height: 1.2;
             font-weight: 500;
             border-radius: 5px;
-            background: $white;
+            background: $gradient--default-two;
 
             @media #{$extra-small-mobile}{
                 padding-left: 15px;
@@ -79,6 +80,10 @@
     }
     .accordion-body{
         padding: 23px 30px 29px;
+        color: $body-text-color;
+        font-size: 17px;
+        font-family: 'Lama Sans Medium';
+        background-color: #f5f2df;
     }
 }
 
