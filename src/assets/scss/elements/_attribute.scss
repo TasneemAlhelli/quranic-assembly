@@ -11,10 +11,12 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 0;
-            font-size: 14px;
+            font-size: 19px;
+            font-family: 'Lama Sans Semibold';
         } 
         & .value {
-            margin-top: 15px;
+            font-size: 17px;
+            margin-top: 15px;   
         }
     }
 }

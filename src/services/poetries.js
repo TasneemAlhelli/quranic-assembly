@@ -2,8 +2,8 @@ import Client from './api'
 
 export const index = async () => {
   try {
-    const res = await Client.get('/centers')
-    return res.data.centers
+    const res = await Client.get('/poetries')
+    return res.data.poetries
   } catch (error) {
     return error
   }
@@ -11,8 +11,8 @@ export const index = async () => {
 
 export const show = async (id) => {
   try {
-    const res = await Client.get(`/centers/${id}`)
-    return res.data.center
+    const res = await Client.get(`/poetries/${id}`)
+    return res.data.poetry
   } catch (error) {
     return error
   }
