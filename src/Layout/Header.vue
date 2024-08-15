@@ -94,6 +94,11 @@ export default {
                     >فرق التواشيج النسائية</router-link
                   >
                 </li>
+                <li>
+                  <router-link to="/characters" class="dropdown-item"
+                    >الشخصيات القرآنية</router-link
+                  >
+                </li>
               </ul>
             </li>
 

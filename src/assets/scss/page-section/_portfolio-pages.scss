@@ -122,6 +122,9 @@
     }
     & .post-info {
         padding: 32px 30px 39px;
+        & .post-title {
+            color: $theme-color--default;
+        }
         & .post-categories {
             margin-bottom: 13px;
             color: #b6b7d2;
