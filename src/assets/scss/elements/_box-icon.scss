@@ -24,6 +24,11 @@
                 & .heading{
                     color: #347176;
                     margin-bottom: 15px;
+                    font-family: 'Lama Sans Bold';
+                }
+                & .text {
+                    font-family: 'Lama Sans Medium';
+                    font-size: 18px;
                 }
                 & .service_text{
                     color: $body-text-color;
@@ -33,8 +38,8 @@
         &:hover {
             .icon-box-wrap {
                 transform: translateY(-5px);
-                background: #fff;
-                box-shadow: 0 10px 50px 5px #D1D1D1;
+                background: #f5f2df;
+                box-shadow: 0 10px 60px 2px #6262627e;
             }
         }
     }

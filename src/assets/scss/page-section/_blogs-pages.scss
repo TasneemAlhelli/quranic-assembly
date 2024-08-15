@@ -79,7 +79,21 @@
             margin-bottom: 10px;
         }
         & .post-title {
+            color: $theme-color--default;
+            font-family: 'Lama Sans Semibold';
             margin-bottom: 15px;
+        }
+        & .post-description {
+            font-size: 20px;
+            & p {
+                & span {
+                    color: $theme-color--secondary;
+                    font-family: 'Lama Sans Semibold';
+                }
+            }
+        }
+        & .post-excerpt {
+            font-size: 16px;
         }
         & .post-meta {
             display: flex;

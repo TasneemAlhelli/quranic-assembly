@@ -1,29 +1,26 @@
 <script>
 import Header from '../layout/Header.vue'
 import Footer from '../layout/Footer.vue'
-import { index } from '../services/centers'
+import { index } from '../services/characters'
 
 export default {
-  name: 'Centers',
+  name: 'Characters',
   components: {
     Header,
     Footer
   },
   data() {
     return {
-      centers: null
+      characters: null
     }
   },
   mounted() {
-    this.getAllCenters()
+    this.getAllCharacters()
   },
   methods: {
-    async getAllCenters() {
-      const centers = await index()
-      this.centers = centers
-    },
-    showCenter(id) {
-      this.$router.push(`/centers/${id}`)
+    async getAllCharacters() {
+      const characters = await index()
+      this.characters = characters
     }
   }
 }
@@ -39,21 +36,20 @@ export default {
             <div class="col-12">
               <div class="breadcrumb_box text-center">
                 <h4 class="breadcrumb-title">
-                  دليل المؤسسات والمراكز القرآنية النسوية في البحرين
+                  دليل الشخصيات القرآنية النسائية في البحرين
                 </h4>
                 <ul class="breadcrumb-list">
                   <li>
                     <router-link to="/">الصفحة الرئيسية</router-link>
                   </li>
                   /
-                  <li class="active">المراكز والمؤسسات القرآنية</li>
+                  <li class="active">الشخصيات القرآنية</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-
       <div
         class="portfolio-pages-wrapper section-space--ptb_100 border-bottom gray-gradient"
       >
@@ -61,29 +57,15 @@ export default {
           <div class="row align-center">
             <div
               class="col-lg-4 col-md-6 mb-30 wow move-up"
-              v-for="center in centers"
-              :key="center.id"
+              v-for="character in characters"
+              :key="character.id"
             >
-              <div
-                class="portfolio-grid-caption"
-                @click="showCenter(center.id)"
-              >
-                <div class="single-portfolio__thumbnail">
-                  <img
-                    class="img-fluid"
-                    src="@/assets/img/centers-default.png"
-                    alt="portfolio.alt"
-                  />
-                </div>
+              <div class="portfolio-grid-caption">
                 <div class="post-info">
-                  <!-- <div class="post-categories">
-                    <router-link to="">مركز المارج</router-link>
-                  </div> -->
                   <h5
                     class="post-title font-weight--bold"
-                    @click="showCenter(center.id)"
                   >
-                    {{ center.name }}
+                    {{ character.name }}
                   </h5>
                 </div>
               </div>

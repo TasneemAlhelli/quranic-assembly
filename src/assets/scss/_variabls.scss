@@ -26,11 +26,12 @@ $gradient--default-two: linear-gradient(218deg,#f0eccf 0,#f5f2df 50%,#f9f9ef 100
 $theme-color--black: #333333;
 $gradient--secondary: linear-gradient(-180deg,#fff 0,#ccdbde 100%);
 $gray-gradient: -webkit-linear-gradient(top,#FFF 0,#F6F5F9 74%,#F6F5F9 100%);
+$gradient--secondary: linear-gradient(-180deg,#f0eccf,#679499 0,#f0eccf 100%);
 
 
 // Font Family
-$font-family-name: Rubik, Helvetica, Arial, sans-serif;
-$heading-font-family-name: Rubik, Helvetica, Arial, sans-serif;
+$font-family-name: 'Lama Sans Regular';
+$heading-font-family-name: Lama Sans Regular;
 $font-awesome-pro: 'Font Awesome 5 Pro';
 $font-awesome-brand: 'Font Awesome 5 Brands';
 

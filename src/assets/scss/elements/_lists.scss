@@ -152,9 +152,10 @@ ol {
     & ul {
         & li {
             display: inline-block;
-            color: $body-text-color;
             padding: 3px 0 3px 17px;
             position: relative;
+            font-family: 'Lama Sans Medium';
+            font-size: 18px;
             &:first-child {
                 &::before {
                     display: none;

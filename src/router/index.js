@@ -8,6 +8,9 @@ import Timeline from '../pages/Timeline.vue'
 import Soiarees from '../pages/Soiaress.vue'
 import Competitions from '../pages/Competitions.vue'
 import Competition from '../pages/Competition.vue'
+import Poetries from '../pages/Poetries.vue'
+import Poetry from '../pages/Poetry.vue'
+import Characters from '../pages/Characters.vue'
 
 const routes = [
   {
@@ -54,7 +57,22 @@ const routes = [
     path: '/competitions/:id',
     name: 'Competition',
     component: Competition
-  }
+  },
+  {
+    path: '/poetries',
+    name: 'Poetries',
+    component: Poetries
+  },
+  {
+    path: '/poetries/:id',
+    name: 'Poetry',
+    component: Poetry
+  },
+  {
+    path: '/characters',
+    name: 'Characters',
+    component: Characters
+  },
 ]
 
 const router = createRouter({

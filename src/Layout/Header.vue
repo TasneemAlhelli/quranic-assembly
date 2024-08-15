@@ -9,7 +9,7 @@ export default {
   mounted() {
     window.addEventListener('scroll', () => {
       let scroll = window.scrollY
-      if (scroll >= 200) {
+      if (scroll >= 50) {
         this.isSticky = true
       } else {
         this.isSticky = false
@@ -87,6 +87,16 @@ export default {
                 <li>
                   <router-link to="/competitions" class="dropdown-item"
                     >المسابقات القرآنية</router-link
+                  >
+                </li>
+                <li>
+                  <router-link to="/poetries" class="dropdown-item"
+                    >فرق التواشيج النسائية</router-link
+                  >
+                </li>
+                <li>
+                  <router-link to="/characters" class="dropdown-item"
+                    >الشخصيات القرآنية</router-link
                   >
                 </li>
               </ul>
