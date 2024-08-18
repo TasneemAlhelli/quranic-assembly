@@ -11,6 +11,8 @@ import Competition from '../pages/Competition.vue'
 import Poetries from '../pages/Poetries.vue'
 import Poetry from '../pages/Poetry.vue'
 import Characters from '../pages/Characters.vue'
+import Courses from '../pages/Courses.vue'
+import Course from '../pages/Course.vue'
 
 const routes = [
   {
@@ -72,6 +74,16 @@ const routes = [
     path: '/characters',
     name: 'Characters',
     component: Characters
+  },
+  {
+    path: '/courses',
+    name: 'Courses',
+    component: Courses
+  },
+  {
+    path: '/courses/:id',
+    name: 'Course',
+    component: Course
   },
 ]
 
