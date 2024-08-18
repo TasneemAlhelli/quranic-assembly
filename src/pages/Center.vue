@@ -14,12 +14,11 @@ export default {
   }),
   mounted() {
     this.centerId = this.$route.params.id
-    this.getOneCenter(this.centerId)
+    this.getCenter(this.centerId)
   },
   methods: {
-    async getOneCenter(centerId) {
+    async getCenter(centerId) {
       this.center = await show(centerId)
-      console.log('center', this.center)
     }
   }
 }

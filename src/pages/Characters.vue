@@ -52,7 +52,7 @@ export default {
       </div>
       <div
         class="portfolio-pages-wrapper section-space--ptb_100 border-bottom gray-gradient"
-      >
+      > 
         <div class="container">
           <div class="row align-center">
             <div

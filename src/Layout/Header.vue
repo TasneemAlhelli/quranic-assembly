@@ -99,6 +99,11 @@ export default {
                     >الشخصيات القرآنية</router-link
                   >
                 </li>
+                <li>
+                  <router-link to="/courses" class="dropdown-item"
+                    >التدريب والتأهيل</router-link
+                  >
+                </li>
               </ul>
             </li>
 
