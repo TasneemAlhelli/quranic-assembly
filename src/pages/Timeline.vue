@@ -44,7 +44,7 @@ export default {
           ]
         },
         {
-          color: '#679499',
+          color: '#004C54',
           date: '2004',
           title: '',
           description: [
@@ -53,7 +53,7 @@ export default {
           ]
         },
         {
-          color: '#f0eccf',
+          color: '#E5E0AE',
           date: '2005',
           title: '',
           description: [
@@ -61,7 +61,7 @@ export default {
           ]
         },
         {
-          color: '#9ab7bb',
+          color: '#347176',
           date: '2007',
           title: '',
           description: [
@@ -74,7 +74,7 @@ export default {
           }
         },
         {
-          color: '#f5f2df',
+          color: '#eae7be',
           date: '2008',
           title: '',
           description: [
@@ -83,7 +83,7 @@ export default {
           ]
         },
         {
-          color: '#ccdbde',
+          color: '#004C54',
           date: '2011',
           title: '',
           description: [
@@ -95,7 +95,7 @@ export default {
           }
         },
         {
-          color: '#f9f9ef',
+          color: '#eae7be',
           date: '2012',
           title: '',
           description: [
@@ -103,7 +103,7 @@ export default {
           ]
         },
         {
-          color: '#9ab7bb',
+          color: '#347176',
           date: '2016',
           title: '',
           description: [
@@ -111,7 +111,7 @@ export default {
           ]
         },
         {
-          color: '#f5f2df',
+          color: '#eae7be',
           date: '2017',
           title: '',
           description: [
@@ -119,7 +119,7 @@ export default {
           ]
         },
         {
-          color: '#679499',
+          color: '#004C54',
           date: '2018',
           title: '',
           description: [
@@ -127,7 +127,7 @@ export default {
           ]
         },
         {
-          color: '#f0eccf',
+          color: '#E5E0AE',
           date: '2019',
           title: '',
           description: [
@@ -174,7 +174,9 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h4 class="breadcrumb-title">سِجِلّ الحراك الزمني للمجمع القرآني النسوي في البحرين</h4>
+                <h4 class="breadcrumb-title">
+                  سِجِلّ الحراك الزمني للمجمع القرآني النسوي في البحرين
+                </h4>
                 <ul class="breadcrumb-list">
                   <li>
                     <router-link to="/">الصفحة الرئيسية</router-link>
