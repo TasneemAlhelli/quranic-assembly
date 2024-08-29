@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="footer-area-wrapper reveal-footer theme_bg">
     <div
-      class="footer-copyright-area section-space--pt_60"
+      class="section-space--pt_30"
     >
       <div class="container">
         <div class="row aling-items-center">
@@ -23,7 +23,7 @@ export default {
                   <a
                     href="tel:0123456789"
                     class="hover-style-link hover-style-link--white"
-                    >0123456789</a
+                    >37797911</a
                   >
                 </li>
                 <li>

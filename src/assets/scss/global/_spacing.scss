@@ -210,6 +210,17 @@
             padding-top: 30px;
         }
     }
+    &--pt_30{
+        padding-top: 30px;
+
+        @media #{$tablet-device}{
+            padding-top: 30px;
+        }
+
+        @media #{$large-mobile}{
+            padding-top: 30px;
+        }
+    }
     &--pb_40{
         padding-bottom: 40px;
 
