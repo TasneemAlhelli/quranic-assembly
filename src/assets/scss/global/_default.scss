@@ -127,7 +127,7 @@ p:last-child {
 }
 a, button {
   color: inherit;
-  display: inline-block;
+  display: $theme-color--default;
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
@@ -232,6 +232,9 @@ select {
 /*------- Defauld Class --------*/
 .text-black {
     color: #333;
+}
+.text-default-color {
+    color: $theme-color--default;
 }
 .border{
     border: 1px solid #ededed !important;
