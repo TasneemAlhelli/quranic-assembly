@@ -11,7 +11,8 @@ export default {
   },
   data() {
     return {
-      centers: null
+      centers: null,
+      length: 6
     }
   },
   mounted() {
@@ -24,6 +25,16 @@ export default {
     },
     showCenter(id) {
       this.$router.push(`/centers/${id}`)
+    },
+    loadMore() {
+      if (this.length > this.centers.length) return
+      this.length = this.length + 6
+    }
+  },
+  computed: {
+    centersLoaded() {
+      if (this.centers && this.centers.length > 0)
+        return this.centers.slice(0, this.length)
     }
   }
 }
@@ -54,14 +65,13 @@ export default {
         </div>
       </div>
 
-      <div
-        class="portfolio-pages-wrapper section-space--ptb_100 border-bottom gray-gradient"
-      >
+      <div class="portfolio-pages-wrapper section-space--ptb_100 border-bottom">
         <div class="container">
           <div class="row align-center">
             <div
               class="col-lg-4 col-md-6 mb-30 wow move-up"
-              v-for="center in centers"
+              v-if="centers != null && centers.length != 0"
+              v-for="center in centersLoaded"
               :key="center.id"
             >
               <div
@@ -76,9 +86,6 @@ export default {
                   />
                 </div>
                 <div class="post-info">
-                  <!-- <div class="post-categories">
-                    <router-link to="">مركز المارج</router-link>
-                  </div> -->
                   <h5
                     class="post-title font-weight--bold"
                     @click="showCenter(center.id)"
@@ -89,11 +96,21 @@ export default {
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="load-more-button text-center">
-                <button class="ht-btn ht-btn-md ht-btn--outline loadMore">
-                  Load More
+              <div
+                class="load-more-button text-center"
+                v-if="centers != null && centers.length != 0"
+              >
+                <button
+                  class="ht-btn ht-btn-md ht-btn--outline loadMore"
+                  v-if="length < centers.length"
+                  @click="loadMore"
+                >
+                  عرض المزيد
                 </button>
               </div>
+              <h5 class="text-default-color" v-else>
+                لا توجد مؤسسات ومراكز القرآنية
+              </h5>
             </div>
           </div>
         </div>

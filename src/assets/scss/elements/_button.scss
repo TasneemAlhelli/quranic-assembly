@@ -91,11 +91,11 @@
 
         &:hover, &:focus, &:active{
             transform: translateY(-3px);
-            border-color: transparent;
-            background-image: $gradient--default;
+            border-color: $theme-color--default;
+            background-image: $theme-color--secondary;
             background-size: 200% auto;
-            background-position: left center;
-            color: $white;
+            background-position: center;
+            color: $theme-color-sub--heading;
         }
     }
     &--circle{

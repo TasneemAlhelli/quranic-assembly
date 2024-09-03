@@ -122,8 +122,10 @@
     }
     & .post-info {
         padding: 32px 30px 39px;
+        background-color: #679499;
         & .post-title {
-            color: $theme-color--default;
+            color: #f0eccf;
+            font-size: 23px;
         }
         & .post-categories {
             margin-bottom: 13px;
@@ -146,15 +148,16 @@
 
 .load-more-button {
     & .ht-btn {
-        margin-top: 30px;
+        font-size: 18px;
+        margin-top: 20px;
     }
     & .ht-btn.noContent {
         line-height: 12px;
         height: 0;
         border-width: none;
-        background: transparent;
-        border-color: transparent;
-        color: #555;
+        background: $theme-color--secondary;
+        border-color: $theme-color--default;
+        color: $theme-color--default;
         margin-top: 0px;
     }
 }
