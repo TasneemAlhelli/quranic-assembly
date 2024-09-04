@@ -161,7 +161,7 @@ export default {
                         <div class="row align-center">
                           <div
                             class="col-lg-4 col-md-6 mb-30 wow move-up"
-                            v-if="awards != null && awards.length != 0"
+                            v-if="awards != null && awards.length > 0"
                             v-for="award in awards"
                             :key="award.id"
                           >
