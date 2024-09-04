@@ -44,12 +44,12 @@ export default {
             </a>
             <ul class="dropdown-menu">
               <li>
+                <a class="link" href="/achievements">إنجازات المجمع القرآني</a>
+              </li>
+              <li>
                 <a class="link" href="/centers"
                   >دليل المؤسسات والمراكز القرآنية</a
                 >
-              </li>
-              <li>
-                <a class="link" href="/achievements">إنجازات المجمع القرآني</a>
               </li>
               <li><a class="link" href="/soiaress">الأمسيات القرآنية</a></li>
               <li>
