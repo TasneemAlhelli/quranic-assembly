@@ -40,7 +40,9 @@ export default {
                   </li>
                   /
                   <li>
-                    <router-link to="/centers">المراكز والمؤسسات القرآنية</router-link>
+                    <router-link to="/centers"
+                      >المراكز والمؤسسات القرآنية</router-link
+                    >
                   </li>
                   /
                   <li class="active">{{ center.name }}</li>
@@ -128,19 +130,25 @@ export default {
                         </div>
                       </li>
                       <li>
+                        <div class="name">
+                          <h6>البريد الالكتروني</h6>
+                        </div>
                         <a
-                          class="hint--bounce hint--top hint--primary email"
+                          class="value hint--bounce hint--top hint--primary email"
                           target="_blank"
                           aria-label="Email"
-                          :href="'https://instagram.com/' + center.email"
+                          href="https://mail.google.com/"
                         >
                           {{ center.email }}
                           <i class="fa fa-envelope"></i>
                         </a>
                       </li>
                       <li>
+                        <div class="name">
+                          <h6>حساب الانستقرام</h6>
+                        </div>
                         <a
-                          class="hint--bounce hint--top hint--primary instagram"
+                          class="value hint--bounce hint--top hint--primary instagram"
                           target="_blank"
                           aria-label="Instagram"
                           :href="'https://instagram.com/' + center.instagram"
