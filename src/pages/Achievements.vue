@@ -27,6 +27,9 @@ export default {
     async getAllAwards() {
       const awards = await getAwards()
       this.awards = awards
+    },
+    redirect(link) {
+      this.$router.push(link)
     }
   }
 }
@@ -41,7 +44,9 @@ export default {
           <div class="row">
             <div class="col-12">
               <div class="breadcrumb_box text-center">
-                <h4 class="breadcrumb-title">إنجازات المجمع القرآني النسوي في البحرين</h4>
+                <h4 class="breadcrumb-title">
+                  إنجازات المجمع القرآني النسوي في البحرين
+                </h4>
                 <ul class="breadcrumb-list">
                   <li>
                     <router-link to="/">الصفحة الرئيسية</router-link>
@@ -127,6 +132,11 @@ export default {
                               :aria-controls="'collapse' + achievement.id"
                             >
                               {{ achievement.name }}
+                              <a
+                                v-if="achievement.link != null"
+                                @click="redirect(achievement.link)"
+                                >&nbsp; رابط</a
+                              >
                             </button>
                           </h2>
                           <div
