@@ -179,8 +179,8 @@ export default {
                               <div class="single-portfolio__thumbnail">
                                 <img
                                   class="img-fluid"
-                                  src="@/assets/img/centers-default.png"
-                                  alt="portfolio.alt"
+                                  :src="award.image"
+                                  alt="award"
                                 />
                               </div>
                               <div class="post-info">
