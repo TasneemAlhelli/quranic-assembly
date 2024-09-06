@@ -179,7 +179,7 @@ export default {
                               <div class="single-portfolio__thumbnail">
                                 <img
                                   class="img-fluid"
-                                  :src="award.image"
+                                  :src="award.image_url"
                                   alt="award"
                                 />
                               </div>
