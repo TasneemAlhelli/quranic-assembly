@@ -10,7 +10,8 @@ export default {
     Footer
   },
   data: () => ({
-    courses: null
+    courses: null,
+    length: 3
   }),
   mounted() {
     this.getAllCourses()
@@ -18,6 +19,16 @@ export default {
   methods: {
     async getAllCourses() {
       this.courses = await index()
+    },
+    loadMore() {
+      if (this.length > this.courses.length) return
+      this.length = this.length + 6
+    }
+  },
+  computed: {
+    coursesLoaded() {
+      if (this.courses && this.courses.length > 0)
+        return this.courses.slice(0, this.length)
     }
   }
 }
@@ -48,14 +59,12 @@ export default {
         </div>
       </div>
 
-      <div
-        class="portfolio-pages-wrapper section-space--ptb_100 border-bottom"
-      >
+      <div class="portfolio-pages-wrapper section-space--ptb_100 border-bottom">
         <div class="container">
           <div class="row align-center">
             <div
               class="col-lg-4 col-md-6 wow move-up"
-              v-for="course in courses"
+              v-for="course in coursesLoaded"
               :key="course.id"
             >
               <div class="portfolio-wrapper mb-30">
@@ -66,7 +75,7 @@ export default {
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      src="../assets/img/centers-default.png"
+                      :src="course.image_url"
                       :alt="course.name"
                     />
                   </div>
@@ -77,10 +86,10 @@ export default {
                         {{ course.name }}
                       </h5>
                       <h6 class="post-overlay-title">
-                        مكان انعقاد الدورة: {{ course.place }}
+                        <b>مكان انعقاد الدورة: </b>{{ course.place }}
                       </h6>
                       <h6 class="post-overlay-title">
-                        تاريخ الدورة: {{ course.date }}
+                        <b>تاريخ الدورة: </b>{{ course.date }}
                       </h6>
                     </div>
                   </div>
@@ -88,12 +97,20 @@ export default {
               </div>
             </div>
 
-            <div class="col-lg-12" v-if="courses">
-              <div class="load-more-button text-center">
-                <button class="ht-btn ht-btn-md ht-btn--outline loadMore">
-                  Load More
+            <div class="col-lg-12">
+              <div
+                class="load-more-button text-center"
+                v-if="courses != null && courses.length > 0"
+              >
+                <button
+                  class="ht-btn ht-btn-md ht-btn--outline loadMore"
+                  v-if="length < courses.length"
+                  @click="loadMore"
+                >
+                  عرض المزيد
                 </button>
               </div>
+              <h5 class="text-default-color" v-else>لا توجد دورات تخصصية</h5>
             </div>
           </div>
         </div>

@@ -309,11 +309,11 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style>
 .download {
   position: relative;
   cursor: pointer;
-  color: #9BC9B6;
+  color: #9bc9b6;
   /* text-decoration: underline; */
   &::after {
     content: '';
@@ -329,9 +329,9 @@ export default {
   }
   &:hover {
     &::after {
-      width: 100%;
+      width: 40%;
       left: 0;
-      right: auto;
+      right: 0;
       z-index: 0;
     }
   }
