@@ -19,6 +19,15 @@ export default {
   methods: {
     async getCourse(courseId) {
       this.course = await show(courseId)
+    },
+    async download(title, link) {
+      const link_element = document.createElement('a')
+      link_element.href = link
+      link_element.download = title
+
+      document.body.appendChild(link_element)
+      link_element.click()
+      document.body.removeChild(link_element)
     }
   }
 }
@@ -58,7 +67,7 @@ export default {
               <div class="main-blog-wrap">
                 <div class="single-blog-item">
                   <div class="post-info lg-blog-post-info wow move-up">
-                    <h4 class="post-title font-weight--light">
+                    <h4 class="post-title">
                       {{ course.name }}
                     </h4>
                     <div class="post-description mt-15">
@@ -74,7 +83,7 @@ export default {
                         <div class="name">
                           <h6>نوع الدورة</h6>
                         </div>
-                        <div class="value">{{ course.type }}</div>
+                        <div class="value">{{ course.type_text }}</div>
                       </li>
                       <li class="item">
                         <div class="name">
@@ -90,25 +99,68 @@ export default {
                       </li>
                     </ul>
 
-                    <h6 class="post-title mt-30">{{ course.content_heading }}</h6>
+                    <div
+                      class="mt-30"
+                      v-if="
+                        course.attachments != null &&
+                        course.attachments.length > 0
+                      "
+                    >
+                      <h6 class="post-title">الملفات المرفقة</h6>
+                      <ul class="wow move-up">
+                        <li
+                          class="item"
+                          v-for="attachment in course.attachments"
+                        >
+                          <div
+                            class="value download"
+                            @click="
+                              download(
+                                attachment.attachment,
+                                attachment.attachment_url
+                              )
+                            "
+                          >
+                            {{
+                              attachment.attachment
+                                .split('courses/attachments/')
+                                .join('')
+                            }}
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <h6 class="post-title mt-30">
+                      {{ course.content_heading }}
+                    </h6>
                     <div class="post-excerpt mt-15">
                       <p>
                         {{ course.content }}
                       </p>
                     </div>
 
+                    <h6 class="post-title mt-30">المواد التعليمية</h6>
                     <table>
                       <tr>
-                        <td v-for="subject in course.subjects">{{ subject.subject }}</td>
+                        <td v-for="subject in course.subjects">
+                          {{ subject.subject }}
+                        </td>
                       </tr>
                     </table>
 
-                    <table>
-                      <tr>
-                        <td v-for="attendee in course.attendees">{{ attendee.name }}</td>
-                      </tr>
-                    </table>
-
+                    <h6 class="post-title mt-30">
+                      قائمة أسماء الملتحقات بالدورة
+                    </h6>
+                    <div class="attendee-grid">
+                      <div
+                        v-for="(attendee, index) in course.attendees"
+                        :key="index"
+                        class="attendee-item"
+                      >
+                        {{ attendee.name }}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -120,3 +172,16 @@ export default {
     <Footer />
   </div>
 </template>
+
+<style scoped>
+.attendee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 3px;
+}
+
+.attendee-item {
+  display: inline-flex;
+  align-items: center;
+}
+</style>
