@@ -60,8 +60,8 @@ export default {
               <div class="portfolio-details-one-images">
                 <img
                   class="img-fluid border-radus-5"
-                  src="@/assets/img/centers-default.png"
-                  alt="center logo"
+                  :src="competition.image_url"
+                  alt="Competition logo"
                 />
               </div>
             </div>
@@ -81,7 +81,7 @@ export default {
                         {{ competition.founder }}
                       </div>
                       <div class="post-date">
-                        <span class="far fa-calendar meta-icon"></span>
+                        <span class="fa fa-user meta-icon"></span>
                         <span style="font-weight: bold">المشرف: </span>
                         {{ competition.supervisor }}
                       </div>
@@ -138,14 +138,16 @@ export default {
                       <div class="value">{{ competition.phone_number }}</div>
                     </li>
                     <li>
+                      <div class="name">
+                        <h6> موقع المسابقة الإلكتروني / انستقرام</h6>
+                      </div>
                       <a
-                        class="hint--bounce hint--top hint--primary instagram"
+                        class="value hint--bounce hint--top hint--primary instagram"
                         target="_blank"
-                        aria-label="Instagram"
-                        :href="'https://instagram.com/' + competition.url"
+                        aria-label="ْURL"
+                        :href="competition.url"
                       >
                         {{ competition.url }}
-                        <i class="fa fa-envelope"></i>
                       </a>
                     </li>
                   </ul>
