@@ -64,6 +64,7 @@ export default {
           <div class="row align-center">
             <div
               class="col-lg-4 col-md-6 wow move-up"
+              v-if="courses != null && courses.length != 0"
               v-for="course in coursesLoaded"
               :key="course.id"
             >

@@ -11,7 +11,8 @@ export default {
   },
   data() {
     return {
-      characters: null
+      characters: null,
+      length: 8
     }
   },
   mounted() {
@@ -21,6 +22,25 @@ export default {
     async getAllCharacters() {
       const characters = await index()
       this.characters = characters
+    },
+    loadMore() {
+      if (this.length > this.characters.length) return
+      this.length = this.length + 8
+    },
+    async download(title, url) {
+      const link = document.createElement('a')
+      link.href = url
+      link.download = title
+
+      document.body.appendChild(link)
+      link.click()
+      document.body.removeChild(link)
+    }
+  },
+  computed: {
+    charactersLoaded() {
+      if (this.characters && this.characters.length > 0)
+        return this.characters.slice(0, this.length)
     }
   }
 }
@@ -50,20 +70,20 @@ export default {
           </div>
         </div>
       </div>
-      <div
-        class="portfolio-pages-wrapper section-space--ptb_100 border-bottom gray-gradient"
-      > 
+      <div class="portfolio-pages-wrapper section-space--ptb_100 border-bottom">
         <div class="container">
           <div class="row align-center">
             <div
-              class="col-lg-4 col-md-6 mb-30 wow move-up"
-              v-for="character in characters"
+              class="col-lg-3 col-md-6 mb-30 wow move-up"
+              v-if="characters != null && characters.length != 0"
+              v-for="character in charactersLoaded"
               :key="character.id"
             >
               <div class="portfolio-grid-caption">
                 <div class="post-info">
                   <h5
-                    class="post-title font-weight--bold"
+                    class="post-title"
+                    @click="download(character.cv, character.cv_url)"
                   >
                     {{ character.name }}
                   </h5>
@@ -71,11 +91,19 @@ export default {
               </div>
             </div>
             <div class="col-lg-12">
-              <div class="load-more-button text-center">
-                <button class="ht-btn ht-btn-md ht-btn--outline loadMore">
-                  Load More
+              <div
+                class="load-more-button text-center"
+                v-if="characters != null && characters.length > 0"
+              >
+                <button
+                  class="ht-btn ht-btn-md ht-btn--outline loadMore"
+                  v-if="length < characters.length"
+                  @click="loadMore"
+                >
+                  عرض المزيد
                 </button>
               </div>
+              <h5 class="text-default-color" v-else>لا توجد شخصيات قرآنية</h5>
             </div>
           </div>
         </div>

@@ -10,7 +10,8 @@ export default {
   },
   data() {
     return {
-      poetries: null
+      poetries: null,
+      length: 6
     }
   },
   mounted() {
@@ -23,6 +24,16 @@ export default {
     },
     showPoetry(id) {
       this.$router.push(`/poetries/${id}`)
+    },
+    loadMore() {
+      if (this.length > this.poetries.length) return
+      this.length = this.length + 6
+    }
+  },
+  computed: {
+    poetriesLoaded() {
+      if (this.poetries && this.poetries.length > 0)
+        return this.poetries.slice(0, this.length)
     }
   }
 }
@@ -53,14 +64,12 @@ export default {
         </div>
       </div>
 
-      <div
-        class="portfolio-pages-wrapper section-space--ptb_100 border-bottom gray-gradient"
-      >
+      <div class="portfolio-pages-wrapper section-space--ptb_100 border-bottom">
         <div class="container">
           <div class="row align-center">
             <div
               class="col-lg-4 col-md-6 wow move-up"
-              v-for="poetry in poetries"
+              v-for="poetry in poetriesLoaded"
               :key="poetry.id"
             >
               <div class="portfolio-wrapper mb-30">
@@ -82,7 +91,7 @@ export default {
                         {{ poetry.name }}
                       </h5>
                       <h6 class="post-overlay-title">
-                        الجهة المؤسسة للفرقة: {{ poetry.founder }}
+                        <b> الجهة المؤسسة للفرقة: </b>{{ poetry.founder }}
                       </h6>
                     </div>
                   </div>
@@ -90,12 +99,22 @@ export default {
               </div>
             </div>
 
-            <div class="col-lg-12" v-if="poetries">
-              <div class="load-more-button text-center">
-                <button class="ht-btn ht-btn-md ht-btn--outline loadMore">
-                  Load More
+            <div class="col-lg-12">
+              <div
+                class="load-more-button text-center"
+                v-if="poetries != null && poetries.length > 0"
+              >
+                <button
+                  class="ht-btn ht-btn-md ht-btn--outline loadMore"
+                  v-if="length < poetries.length"
+                  @click="loadMore"
+                >
+                  عرض المزيد
                 </button>
               </div>
+              <h5 class="text-default-color" v-else>
+                لا توجد فرق تواشيح نسائية
+              </h5>
             </div>
           </div>
         </div>

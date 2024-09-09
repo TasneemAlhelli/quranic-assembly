@@ -100,7 +100,15 @@ export default {
                         <div class="name">
                           <h6>حساب الانستقرام</h6>
                         </div>
-                        <div class="value">{{ poetry.instagram }}</div>
+                        <a
+                          class="value hint--bounce hint--top hint--primary instagram"
+                          target="_blank"
+                          aria-label="Instagram"
+                          :href="'https://instagram.com/' + poetry.instagram"
+                        >
+                          {{ poetry.instagram }}
+                          <i class="fab fa-instagram"></i>
+                        </a>
                       </li>
                     </ul>
 
