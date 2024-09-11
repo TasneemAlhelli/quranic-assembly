@@ -73,7 +73,7 @@ export default {
             >
               <div class="portfolio-wrapper mb-30">
                 <div class="single-portfolio-item">
-                  <div class="single-portfolio__thumbnail fixed_width">
+                  <div class="single-portfolio__thumbnail"  >
                     <img
                       class="img-fluid border-radus-5"
                       :src="soiree.image_url"
