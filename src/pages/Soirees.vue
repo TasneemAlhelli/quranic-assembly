@@ -1,37 +1,37 @@
 <script>
 import Header from '../layout/Header.vue'
 import Footer from '../layout/Footer.vue'
-import { index } from '../services/soiaress'
+import { index } from '../services/soirees'
 
 export default {
-  name: 'Soiaress',
+  name: 'Soirees',
   components: {
     Header,
     Footer
   },
   data() {
     return {
-      soiarees: null,
+      soirees: null,
       length: 4
     }
   },
   mounted() {
-    this.getAllSoiaress()
+    this.getAllSoirees()
   },
   methods: {
-    async getAllSoiaress() {
-      const soiarees = await index()
-      this.soiarees = soiarees
+    async getAllSoirees() {
+      const soirees = await index()
+      this.soirees = soirees
     },
     loadMore() {
-      if (this.length > this.soiarees.length) return
+      if (this.length > this.soirees.length) return
       this.length = this.length + 4
     }
   },
   computed: {
-    soiareesLoaded() {
-      if (this.soiarees && this.soiarees.length > 0)
-        return this.soiarees.slice(0, this.length)
+    soireesLoaded() {
+      if (this.soirees && this.soirees.length > 0)
+        return this.soirees.slice(0, this.length)
     }
   }
 }
@@ -67,30 +67,30 @@ export default {
           <div class="row align-center">
             <div
               class="col-lg-5 col-md-8 wow move-up"
-              v-if="soiarees != null && soiarees.length != 0"
-              v-for="soiaree in soiareesLoaded"
-              :key="soiaree.key"
+              v-if="soirees != null && soirees.length != 0"
+              v-for="soiree in soireesLoaded"
+              :key="soiree.key"
             >
               <div class="portfolio-wrapper mb-30">
                 <div class="single-portfolio-item">
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      :src="soiaree.image_url"
-                      :alt="soiaree.name"
+                      :src="soiree.image_url"
+                      :alt="soiree.name"
                     />
                   </div>
                   <div class="post-overlay gradient-background"></div>
                   <div class="single-portfolio__content">
                     <div class="post-overlay-info">
                       <h4 class="post-overlay-title text-white">
-                        {{ soiaree.name }}
+                        {{ soiree.name }}
                       </h4>
-                      <br/>
+                      <br />
                       <h5>
-                        الوقت: {{ soiaree.date }} 
+                        الوقت: {{ soiree.date }}
                         <br />
-                        المكان: {{ soiaree.place }} 
+                        المكان: {{ soiree.place }}
                       </h5>
                     </div>
                   </div>
@@ -100,12 +100,13 @@ export default {
 
             <div class="col-lg-12">
               <div
-                class="load-more-button text-center"3
-                v-if="soiarees != null && soiarees.length != 0"
+                class="load-more-button text-center"
+                3
+                v-if="soirees != null && soirees.length != 0"
               >
                 <button
                   class="ht-btn ht-btn-md ht-btn--outline loadMore"
-                  v-if="length < soiarees.length"
+                  v-if="length < soirees.length"
                   @click="loadMore"
                 >
                   عرض المزيد

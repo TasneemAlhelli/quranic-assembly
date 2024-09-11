@@ -70,7 +70,7 @@ export default {
           ],
           link: {
             text: 'الأمسيات القرآنية',
-            route: '/soiaress'
+            route: '/soiress'
           }
         },
         {

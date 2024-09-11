@@ -76,7 +76,11 @@ export default {
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      :src="course.image_url"
+                      :src="
+                        course.image_url
+                          ? course.image_url
+                          : require('@/assets/img/courses-default.png')
+                      "
                       :alt="course.name"
                     />
                   </div>

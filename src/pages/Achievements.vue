@@ -176,7 +176,7 @@ export default {
                             :key="award.id"
                           >
                             <div class="portfolio-grid-caption">
-                              <div class="single-portfolio__thumbnail">
+                              <div class="single-portfolio__thumbnail award">
                                 <img
                                   class="img-fluid"
                                   :src="award.image_url"

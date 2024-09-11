@@ -81,8 +81,12 @@ export default {
                 <div class="single-portfolio__thumbnail">
                   <img
                     class="img-fluid"
-                    src="@/assets/img/centers-default.png"
-                    alt="portfolio.alt"
+                    :src="
+                      center.image_url != null
+                        ? center.image_url
+                        : require('@/assets/img/centers-default.png')
+                    "
+                    :alt="center.name"
                   />
                 </div>
                 <div class="post-info">

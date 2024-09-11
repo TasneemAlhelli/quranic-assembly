@@ -52,7 +52,7 @@ export default {
                 >
               </li>
               <li><a class="link" href="/courses">التدريب والتأهيل</a></li>
-              <li><a class="link" href="/soiaress">الأمسيات القرآنية</a></li>
+              <li><a class="link" href="/soirees">الأمسيات القرآنية</a></li>
               <li>
                 <a class="link" href="/competitions">المسابقات القرآنية</a>
               </li>
