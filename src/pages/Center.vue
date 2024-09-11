@@ -60,7 +60,11 @@ export default {
               <div class="portfolio-details-one-images">
                 <img
                   class="img-fluid border-radus-5"
-                  src="@/assets/img/centers-default.png"
+                  :src="
+                    center.image_url != null
+                      ? center.image_url
+                      : require('@/assets/img/centers-default.png')
+                  "
                   alt="center logo"
                 />
               </div>
@@ -152,10 +156,14 @@ export default {
                           target="_blank"
                           aria-label="Instagram"
                           :href="'https://instagram.com/' + center.instagram"
+                          v-if="center.instagram"
                         >
                           {{ center.instagram }}
                           <i class="fab fa-instagram"></i>
                         </a>
+                        <span class="value hint--bounce hint--primary" v-else
+                          >-</span
+                        >
                       </li>
                     </ul>
                   </div>

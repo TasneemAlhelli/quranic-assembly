@@ -78,7 +78,7 @@ export default {
                 class="portfolio-grid-caption"
                 @click="showCenter(center.id)"
               >
-                <div class="single-portfolio__thumbnail">
+                <div class="single-portfolio__thumbnail fixed_width">
                   <img
                     class="img-fluid"
                     :src="
