@@ -114,10 +114,14 @@ export default {
                           target="_blank"
                           aria-label="Instagram"
                           :href="'https://instagram.com/' + poetry.instagram"
+                          v-if="poetry.instagram"
                         >
                           {{ poetry.instagram }}
                           <i class="fab fa-instagram"></i>
                         </a>
+                        <span class="value hint--bounce hint--primary" v-else
+                          >-</span
+                        >
                       </li>
                     </ul>
 

@@ -35,7 +35,7 @@ export default {
                 </h4>
                 <ul class="breadcrumb-list">
                   <li>
-                    <router-link to="/r">الصفحة الرئيسية</router-link>
+                    <router-link to="/">الصفحة الرئيسية</router-link>
                   </li>
                   /
                   <li class="active">من نحن</li>
@@ -124,9 +124,16 @@ export default {
                   <div class="ht-box-icon style-01">
                     <div class="icon-box-wrap">
                       <div class="content">
-                        <h5 class="heading">مؤتمر المرأة المسلمة</h5>
+                        <h5 class="heading">
+                          واقع المراكز القرآنية النسوية في البحرين
+                        </h5>
                         <div class="row aling-items-center">
                           <div class="col-md-12">
+                            
+                            <span class="text"
+                              >دراسة للواقع النسوي في مراكز التجويد وتحفيظ
+                              القرآن الكريم في البحرين</span
+                            >
                             <div class="text download" @click="download()">
                               تحميل ورقة بحث مؤتمر المرأة المسلمة
                             </div>

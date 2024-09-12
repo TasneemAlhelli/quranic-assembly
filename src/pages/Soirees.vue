@@ -101,11 +101,10 @@ export default {
             <div class="col-lg-12">
               <div
                 class="load-more-button text-center"
-                3
                 v-if="soirees != null && soirees.length != 0"
               >
                 <button
-                  class="ht-btn ht-btn-md ht-btn--outline loadMore"
+                  class="ht-btn ht-btn-md ht-btn--outline"
                   v-if="length < soirees.length"
                   @click="loadMore"
                 >
