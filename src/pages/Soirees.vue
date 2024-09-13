@@ -73,10 +73,14 @@ export default {
             >
               <div class="portfolio-wrapper mb-30">
                 <div class="single-portfolio-item">
-                  <div class="single-portfolio__thumbnail"  >
+                  <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      :src="soiree.image_url"
+                      :src="
+                        soiree.image_url
+                          ? soiree.image_url
+                          : require('@/assets/img/soirees-default.png')
+                      "
                       :alt="soiree.name"
                     />
                   </div>
@@ -88,9 +92,11 @@ export default {
                       </h4>
                       <br />
                       <h5>
-                        الوقت: {{ soiree.date }}
+                        <b>الوقت:</b>
+                        {{ soiree.date }}
                         <br />
-                        المكان: {{ soiree.place }}
+                        <b>المكان:</b>
+                        {{ soiree.place }}
                       </h5>
                     </div>
                   </div>

@@ -60,7 +60,11 @@ export default {
               <div class="portfolio-details-one-images">
                 <img
                   class="img-fluid border-radus-5"
-                  :src="competition.image_url"
+                  :src="
+                    competition.image_url
+                      ? competition.image_url
+                      : require('@/assets/img/competitions-default.png')
+                  "
                   alt="Competition logo"
                 />
               </div>
@@ -139,7 +143,7 @@ export default {
                     </li>
                     <li>
                       <div class="name">
-                        <h6> موقع المسابقة الإلكتروني / انستقرام</h6>
+                        <h6>موقع المسابقة الإلكتروني / انستقرام</h6>
                       </div>
                       <a
                         class="value hint--bounce hint--top hint--primary instagram"

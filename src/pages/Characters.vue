@@ -98,6 +98,7 @@ export default {
                 <button
                   class="ht-btn ht-btn-md ht-btn--outline loadMore"
                   v-if="length < characters.length"
+                  target="_blank"
                   @click="loadMore"
                 >
                   عرض المزيد

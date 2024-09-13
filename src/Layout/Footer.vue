@@ -21,9 +21,16 @@ export default {
                 </li>
                 <li>
                   <a
-                    href="tel:0123456789"
+                    href="tel:37797911"
                     class="hover-style-link hover-style-link--white"
                     >37797911</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="tel:39727915"
+                    class="hover-style-link hover-style-link--white"
+                    >39727915</a
                   >
                 </li>
                 <li>

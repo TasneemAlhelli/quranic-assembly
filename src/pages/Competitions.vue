@@ -79,7 +79,11 @@ export default {
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      :src="competition.image_url"
+                      :src="
+                        competition.image_url
+                          ? competition.image_url
+                          : require('@/assets/img/competitions-default.png')
+                      "
                       :alt="competition.name"
                     />
                   </div>

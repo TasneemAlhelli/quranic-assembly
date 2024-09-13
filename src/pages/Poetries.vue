@@ -80,7 +80,11 @@ export default {
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      src="../assets/img/centers-default.png"
+                      :src="
+                        poetry.image_url
+                          ? poetry.image_url
+                          : require('@/assets/img/poetries-default.png')
+                      "
                       :alt="poetry.name"
                     />
                   </div>

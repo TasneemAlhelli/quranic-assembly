@@ -13,3 +13,37 @@
         }
     }
 }
+
+.banner-background-area {
+    width: 100vw;
+    height: 300px;
+}
+
+.hompage-banner {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: end;
+    justify-content: center;
+
+    & .timeline-btn {
+        margin-top: 145px;
+        padding: 10px;
+        border: 1px solid #eae7be;
+        background-color: transparent;
+        color: #eae7be;
+
+        &:hover {
+            border: 1px solid #eae7be;
+            background-color: #347176;
+            color: #eae7be;
+        }
+    }
+}
+
+.homepage-content {
+    width: 100%;
+    height: 150px;
+    padding-top: 50px;
+    background-color: #eae7be;
+}
+
