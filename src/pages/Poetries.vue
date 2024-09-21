@@ -83,7 +83,7 @@ export default {
                       :src="
                         poetry.image_url
                           ? poetry.image_url
-                          : require('@/assets/img/poetries-default.png')
+                          : require('@/assets/img/default/poetries-default.png')
                       "
                       :alt="poetry.name"
                     />

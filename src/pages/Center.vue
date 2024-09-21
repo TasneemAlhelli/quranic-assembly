@@ -63,7 +63,7 @@ export default {
                   :src="
                     center.image_url != null
                       ? center.image_url
-                      : require('@/assets/img/centers-default.png')
+                      : require('@/assets/img/default/centers-default.png')
                   "
                   alt="center logo"
                 />

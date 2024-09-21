@@ -82,7 +82,7 @@ export default {
                       :src="
                         competition.image_url
                           ? competition.image_url
-                          : require('@/assets/img/competitions-default.png')
+                          : require('@/assets/img/default/competitions-default.png')
                       "
                       :alt="competition.name"
                     />

@@ -113,9 +113,3 @@
         }
     }
 }
-
-.soft-accordion-two {
-    @media #{$tablet-device, $large-mobile}{
-        margin-top: 70px;
-    }
-}

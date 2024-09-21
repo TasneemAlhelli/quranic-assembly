@@ -79,7 +79,7 @@ export default {
                       :src="
                         soiree.image_url
                           ? soiree.image_url
-                          : require('@/assets/img/soirees-default.png')
+                          : require('@/assets/img/default/soirees-default.png')
                       "
                       :alt="soiree.name"
                     />

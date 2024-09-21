@@ -79,7 +79,7 @@ export default {
                       :src="
                         course.image_url
                           ? course.image_url
-                          : require('@/assets/img/courses-default.png')
+                          : require('@/assets/img/default/courses-default.png')
                       "
                       :alt="course.name"
                     />
