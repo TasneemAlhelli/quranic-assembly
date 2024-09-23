@@ -11,7 +11,7 @@ export default {
     async download() {
       const link = document.createElement('a')
       link.href = '/docs/islamic-women.pdf'
-      link.download = 'مؤتمر المرأة المسلمة.pdf'
+      link.download = 'واقع المراكز القرآنية النسوية في البحرين.pdf'
 
       document.body.appendChild(link)
       link.click()
@@ -129,7 +129,6 @@ export default {
                         </h5>
                         <div class="row aling-items-center">
                           <div class="col-md-12">
-                            
                             <span class="text"
                               >دراسة للواقع النسوي في مراكز التجويد وتحفيظ
                               القرآن الكريم في البحرين</span

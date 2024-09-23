@@ -131,12 +131,13 @@ export default {
                               "
                               :aria-controls="'collapse' + achievement.id"
                             >
-                              {{ achievement.name }}
                               <a
                                 v-if="achievement.link != null"
                                 @click="redirect(achievement.link)"
-                                >&nbsp; رابط</a
+                                >{{ achievement.name }}</a
                               >
+
+                              <span v-else>{{ achievement.name }}</span>
                             </button>
                           </h2>
                           <div
