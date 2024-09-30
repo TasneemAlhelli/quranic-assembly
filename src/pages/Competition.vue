@@ -57,9 +57,9 @@ export default {
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
-              <div class="portfolio-details-one-images">
+              <div class="portfolio-details-one-images align-center">
                 <img
-                  class="img-fluid border-radus-5"
+                  class="img-fluid border-radus-5 mb-30"
                   :src="
                     competition.image_url
                       ? competition.image_url

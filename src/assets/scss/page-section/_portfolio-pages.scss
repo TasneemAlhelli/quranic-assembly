@@ -112,6 +112,9 @@
     border-radius: 5px;
     overflow: hidden;
     transition: $transition--default;
+    @media #{$extra-small-mobile}{
+        max-width: 300px;
+    }
     & a {
         display: block;
     }

@@ -56,10 +56,10 @@ export default {
       <div class="blog-pages-wrapper section-space--ptb_30">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="portfolio-details-one-images">
+            <div class="col-lg-4 col-sm-6">
+              <div class="portfolio-details-one-images align-center">
                 <img
-                  class="img-fluid border-radus-5"
+                  class="img-fluid border-radus-5 mb-30"
                   :src="
                     center.image_url != null
                       ? center.image_url
@@ -70,7 +70,7 @@ export default {
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-sm-6">
               <div class="main-blog-wrap">
                 <div class="single-blog-item">
                   <div class="post-info lg-blog-post-info wow move-up">

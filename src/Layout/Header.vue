@@ -57,7 +57,7 @@ export default {
                 <a class="link" href="/competitions">المسابقات القرآنية</a>
               </li>
               <li>
-                <a class="link" href="/poetries">فرق التواشيج النسائية</a>
+                <a class="link" href="/poetries">فرق التواشيح النسائية</a>
               </li>
               <li><a class="link" href="/characters">الشخصيات القرآنية</a></li>
             </ul>

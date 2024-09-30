@@ -15,7 +15,7 @@ html, body {
     height: 100%;
 }
 
-body { 
+body {
     line-height: $body-line-height;
     font-size: $body-font-size;
     font-style: normal;
@@ -382,6 +382,13 @@ select {
         &.active {
             color: #f5f2df;
         }
+    }
+}
+
+.row {
+
+    @media #{$extra-small-mobile}{
+        display: grid;
     }
 }
 
