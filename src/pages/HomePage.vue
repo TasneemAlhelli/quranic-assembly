@@ -34,7 +34,6 @@ export default {
     <section class="main">
       <div
         class="banner-background-area banner-background-area-bg bg-img bg-cover"
-        :style="bgImg"
       >
         <div class="container">
           <div class="row">
@@ -56,7 +55,9 @@ export default {
                   <router-link to="/achievements">
                     <div class="content statistics">
                       <h6 class="heading">الانجازات القرآنية</h6>
-                      <div class="service_text" >{{ statistics.achievements }}</div>
+                      <div class="service_text">
+                        {{ statistics.achievements }}
+                      </div>
                     </div>
                   </router-link>
                 </div>
@@ -68,7 +69,7 @@ export default {
                   <router-link to="/achievements">
                     <div class="content statistics">
                       <h6 class="heading">قصص النجاح</h6>
-                      <div class="service_text" >{{ statistics.awards }}</div>
+                      <div class="service_text">{{ statistics.awards }}</div>
                     </div>
                   </router-link>
                 </div>
@@ -116,7 +117,9 @@ export default {
                   <router-link to="/competitions">
                     <div class="content statistics">
                       <h6 class="heading">المسابقات القرآنية</h6>
-                      <div class="service_text">{{ statistics.competitions }}</div>
+                      <div class="service_text">
+                        {{ statistics.competitions }}
+                      </div>
                     </div>
                   </router-link>
                 </div>
@@ -140,7 +143,9 @@ export default {
                   <router-link to="/characters">
                     <div class="content statistics">
                       <h6 class="heading">الشخصيات القرآنية</h6>
-                      <div class="service_text">{{ statistics.characters }}</div>
+                      <div class="service_text">
+                        {{ statistics.characters }}
+                      </div>
                     </div>
                   </router-link>
                 </div>
