@@ -21,6 +21,7 @@ export default {
                 &copy; 2024 <b>المجمع القرآني النسوي</b> في البحرين
               </span>
               <br />
+              <br />
               <a
                 href="tel:37797911"
                 class="hover-style-link hover-style-link--white"

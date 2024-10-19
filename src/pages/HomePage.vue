@@ -48,107 +48,104 @@ export default {
 
       <div class="container">
         <div class="row">
-          <div class="row section-space--pt_30 align-center" v-if="statistics">
+          <div
+            class="row section-space--ptb_100 align-center"
+            v-if="statistics"
+          >
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/achievements">
-                    <div class="content statistics">
-                      <h6 class="heading">الانجازات القرآنية</h6>
-                      <div class="service_text">
-                        {{ statistics.achievements }}
-                      </div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/achievements">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      الانجازات القرآنية
+                    </h5>
+                    <h6>{{ statistics.achievements }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/achievements">
-                    <div class="content statistics">
-                      <h6 class="heading">قصص النجاح</h6>
-                      <div class="service_text">{{ statistics.awards }}</div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/achievements">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      قصص النجاح
+                    </h5>
+                    <h6>{{ statistics.awards }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/centers">
-                    <div class="content statistics">
-                      <h6 class="heading">المراكز والمؤسسات</h6>
-                      <div class="service_text">{{ statistics.centers }}</div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/centers">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      المراكز والمؤسسات
+                    </h5>
+                    <h6>{{ statistics.centers }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/courses">
-                    <div class="content statistics statistics">
-                      <h6 class="heading">التدريب والتأهيل</h6>
-                      <div class="service_text">{{ statistics.courses }}</div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/courses">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      التدريب والتأهيل
+                    </h5>
+                    <h6>{{ statistics.courses }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/soirees">
-                    <div class="content statistics">
-                      <h6 class="heading">الامسيات القرآنية</h6>
-                      <div class="service_text">{{ statistics.soirees }}</div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/soirees">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      الامسيات القرآنية
+                    </h5>
+                    <h6>{{ statistics.soirees }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/competitions">
-                    <div class="content statistics">
-                      <h6 class="heading">المسابقات القرآنية</h6>
-                      <div class="service_text">
-                        {{ statistics.competitions }}
-                      </div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/competitions">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      المسابقات القرآنية
+                    </h5>
+                    <h6>{{ statistics.competitions }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/poetries">
-                    <div class="content statistics">
-                      <h6 class="heading">فرق التواشيح</h6>
-                      <div class="service_text">{{ statistics.poetries }}</div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/poetries">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      فرق التواشيح
+                    </h5>
+                    <h6>{{ statistics.poetries }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
             <div class="col-lg-3 col-md-5 wow move-up">
-              <div class="service-grid">
-                <div class="ht-service-box--two text-center style-03">
-                  <router-link to="/characters">
-                    <div class="content statistics">
-                      <h6 class="heading">الشخصيات القرآنية</h6>
-                      <div class="service_text">
-                        {{ statistics.characters }}
-                      </div>
-                    </div>
-                  </router-link>
-                </div>
+              <div class="statistics-container">
+                <router-link to="/characters">
+                  <div class="post-info">
+                    <h5 class="post-title font-weight--bold" @click="">
+                      الشخصيات القرآنية
+                    </h5>
+                    <h6>{{ statistics.characters }}</h6>
+                  </div>
+                </router-link>
               </div>
             </div>
           </div>
