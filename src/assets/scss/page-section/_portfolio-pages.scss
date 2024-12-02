@@ -124,7 +124,7 @@
         padding: 5px 0;
     }
     &:hover {
-        box-shadow: 0 22px 32px rgba(51, 51, 51, 0.1);
+        box-shadow: 0 5px 25px 3px #004C54;
         transform: translateY(-5px);
     }
     @media #{$extra-small-mobile}{

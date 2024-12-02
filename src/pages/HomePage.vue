@@ -105,7 +105,7 @@ export default {
                 <router-link to="/soirees">
                   <div class="post-info">
                     <h5 class="post-title font-weight--bold" @click="">
-                      الامسيات القرآنية
+                      الأمسيات القرآنية
                     </h5>
                     <h6>{{ statistics.soirees }}</h6>
                   </div>
