@@ -19,6 +19,15 @@ export default {
   methods: {
     async getOnePoetry(poetryId) {
       this.poetry = await show(poetryId)
+    },
+    async download(title, link) {
+      const link_element = document.createElement('a')
+      link_element.href = link
+      link_element.download = title
+
+      document.body.appendChild(link_element)
+      link_element.click()
+      document.body.removeChild(link_element)
     }
   }
 }
@@ -100,7 +109,19 @@ export default {
                         <div class="name">
                           <h6>حساب الانستقرام</h6>
                         </div>
-                        <div class="value">{{ poetry.instagram }}</div>
+                        <a
+                          class="value hint--bounce hint--top hint--primary instagram"
+                          target="_blank"
+                          aria-label="Instagram"
+                          :href="'https://instagram.com/' + poetry.instagram"
+                          v-if="poetry.instagram"
+                        >
+                          {{ poetry.instagram }}
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <span class="value hint--bounce hint--primary" v-else
+                          >-</span
+                        >
                       </li>
                     </ul>
 
@@ -111,7 +132,37 @@ export default {
                       </p>
                     </div>
 
-                    <h6 class="post-title mt-30">نماذج من الإنجازات</h6>
+                    <div
+                      class="mt-30"
+                      v-if="
+                        poetry.attachments != null &&
+                        poetry.attachments.length > 0
+                      "
+                    >
+                      <h6 class="post-title">نماذج من الإنجازات</h6>
+                      <ul class="wow move-up">
+                        <li
+                          class="item"
+                          v-for="attachment in poetry.attachments"
+                        >
+                          <div
+                            class="value download"
+                            @click="
+                              download(
+                                attachment.attachment,
+                                attachment.attachment_url
+                              )
+                            "
+                          >
+                            {{
+                              attachment.attachment
+                                .split('poetries/attachments/')
+                                .join('')
+                            }}
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -29,7 +29,7 @@
         .accordion-button {
             border: none;
             width: 100%;
-            text-align: left;
+            text-align: right;
             color: #347176;
             padding: 20px 50px;
             position: relative;
@@ -43,7 +43,8 @@
 
             @media #{$extra-small-mobile}{
                 padding-left: 15px;
-                padding-right: 20px;
+                padding-right: 45px;
+                line-height: 1.4;
             }
             &:active {
                 background-color: $white;
@@ -111,11 +112,5 @@
                 color: #fff;
             }
         }
-    }
-}
-
-.soft-accordion-two {
-    @media #{$tablet-device, $large-mobile}{
-        margin-top: 70px;
     }
 }

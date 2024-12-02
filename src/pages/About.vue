@@ -11,7 +11,7 @@ export default {
     async download() {
       const link = document.createElement('a')
       link.href = '/docs/islamic-women.pdf'
-      link.download = 'مؤتمر المرأة المسلمة.pdf'
+      link.download = 'واقع المراكز القرآنية النسوية في البحرين.pdf'
 
       document.body.appendChild(link)
       link.click()
@@ -35,7 +35,7 @@ export default {
                 </h4>
                 <ul class="breadcrumb-list">
                   <li>
-                    <router-link to="/r">الصفحة الرئيسية</router-link>
+                    <router-link to="/">الصفحة الرئيسية</router-link>
                   </li>
                   /
                   <li class="active">من نحن</li>
@@ -94,22 +94,22 @@ export default {
                             <div class="horizontal-list-display">
                               <ul>
                                 <li>
-                                  مؤسسة قرآنية جامعة وفاعلة ومعتمدة ومميزة
+                                  - مؤسسة قرآنية جامعة وفاعلة ومعتمدة ومميزة
                                 </li>
-                                <li>خدمة القرآن ونشر علومه من أبرز مبادئنا</li>
-                                <li>الابتكار والتميّز</li>
-                                <li>الحرفية</li>
-                                <li>تقدم خدمات نوعية وشاملة</li>
-                                <li>الجودة العالية</li>
-                                <li>الشراكة</li>
-                                <li>التواصل الفعّال</li>
+                                <li>- خدمة القرآن ونشر علومه من أبرز مبادئنا</li>
+                                <li>- الابتكار والتميّز</li>
+                                <li>- الحرفية</li>
+                                <li>- تقدم خدمات نوعية وشاملة</li>
+                                <li>- الجودة العالية</li>
+                                <li>- الشراكة</li>
+                                <li>- التواصل الفعّال</li>
                                 <li>
-                                  التعاون والعمل الجماعي لتمثل تجربة رائدة
+                                  - التعاون والعمل الجماعي لتمثل تجربة رائدة
                                 </li>
-                                <li>الريادة والمبادرة</li>
-                                <li>الأصالة</li>
-                                <li>الوحدة</li>
-                                <li>الانتماء والولاء</li>
+                                <li>- الريادة والمبادرة</li>
+                                <li>- الأصالة</li>
+                                <li>- الوحدة</li>
+                                <li>- الانتماء والولاء</li>
                               </ul>
                             </div>
                           </div>
@@ -124,9 +124,15 @@ export default {
                   <div class="ht-box-icon style-01">
                     <div class="icon-box-wrap">
                       <div class="content">
-                        <h5 class="heading">مؤتمر المرأة المسلمة</h5>
+                        <h5 class="heading">
+                          واقع المراكز القرآنية النسوية في البحرين
+                        </h5>
                         <div class="row aling-items-center">
                           <div class="col-md-12">
+                            <span class="text"
+                              >دراسة للواقع النسوي في مراكز التجويد وتحفيظ
+                              القرآن الكريم في البحرين</span
+                            >
                             <div class="text download" @click="download()">
                               تحميل ورقة بحث مؤتمر المرأة المسلمة
                             </div>

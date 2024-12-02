@@ -11,7 +11,8 @@ export default {
   },
   data() {
     return {
-      competitions: null
+      competitions: null,
+      length: 6
     }
   },
   mounted() {
@@ -21,6 +22,16 @@ export default {
     async getAllCompetitions() {
       const competitions = await index()
       this.competitions = competitions
+    },
+    loadMore() {
+      if (this.length > this.competitions.length) return
+      this.length = this.length + 6
+    }
+  },
+  computed: {
+    competitionsLoaded() {
+      if (this.competitions && this.competitions.length > 0)
+        return this.competitions.slice(0, this.length)
     }
   }
 }
@@ -51,14 +62,13 @@ export default {
         </div>
       </div>
 
-      <div
-        class="portfolio-pages-wrapper section-space--ptb_100 border-bottom gray-gradient"
-      >
+      <div class="portfolio-pages-wrapper section-space--ptb_100 border-bottom">
         <div class="container">
           <div class="row align-center">
             <div
               class="col-lg-4 col-md-6 wow move-up"
-              v-for="competition in competitions"
+              v-if="competitions != null && competitions.length != 0"
+              v-for="competition in competitionsLoaded"
               :key="competition.id"
             >
               <div class="portfolio-wrapper mb-30">
@@ -69,7 +79,11 @@ export default {
                   <div class="single-portfolio__thumbnail">
                     <img
                       class="img-fluid border-radus-5"
-                      src="../assets/img/centers-default.png"
+                      :src="
+                        competition.image_url
+                          ? competition.image_url
+                          : require('@/assets/img/default/competitions-default.png')
+                      "
                       :alt="competition.name"
                     />
                   </div>
@@ -85,12 +99,22 @@ export default {
               </div>
             </div>
 
-            <div class="col-lg-12" v-if="competitions">
-              <div class="load-more-button text-center">
-                <button class="ht-btn ht-btn-md ht-btn--outline loadMore">
-                  Load More
+            <div class="col-lg-12">
+              <div
+                class="load-more-button text-center"
+                v-if="competitions != null && competitions.length != 0"
+              >
+                <button
+                  class="ht-btn ht-btn-md ht-btn--outline loadMore"
+                  v-if="length < competitions.length"
+                  @click="loadMore"
+                >
+                  عرض المزيد
                 </button>
               </div>
+              <h5 class="text-default-color" v-else>
+                لا توجد مسابقات القرآنية
+              </h5>
             </div>
           </div>
         </div>

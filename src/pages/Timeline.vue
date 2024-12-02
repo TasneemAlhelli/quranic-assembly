@@ -19,7 +19,7 @@ export default {
           ]
         },
         {
-          color: '#E5E0AE',
+          color: '#004C54',
           date: '1999',
           title: '',
           description: [
@@ -27,7 +27,7 @@ export default {
           ]
         },
         {
-          color: '#347176',
+          color: '#004C54',
           date: '2000',
           title: 'مشروع التحفيظ',
           description: [
@@ -35,7 +35,7 @@ export default {
           ]
         },
         {
-          color: '#eae7be',
+          color: '#004C54',
           date: '2002',
           title: '',
           description: [
@@ -44,7 +44,7 @@ export default {
           ]
         },
         {
-          color: '#004C54',
+          color: '#347176',
           date: '2004',
           title: '',
           description: [
@@ -53,7 +53,7 @@ export default {
           ]
         },
         {
-          color: '#E5E0AE',
+          color: '#347176',
           date: '2005',
           title: '',
           description: [
@@ -70,11 +70,11 @@ export default {
           ],
           link: {
             text: 'الأمسيات القرآنية',
-            route: '/soiaress'
+            route: '/soiress'
           }
         },
         {
-          color: '#eae7be',
+          color: '#347176',
           date: '2008',
           title: '',
           description: [
@@ -83,7 +83,7 @@ export default {
           ]
         },
         {
-          color: '#004C54',
+          color: '#679499',
           date: '2011',
           title: '',
           description: [
@@ -95,7 +95,7 @@ export default {
           }
         },
         {
-          color: '#eae7be',
+          color: '#679499',
           date: '2012',
           title: '',
           description: [
@@ -103,7 +103,7 @@ export default {
           ]
         },
         {
-          color: '#347176',
+          color: '#679499',
           date: '2016',
           title: '',
           description: [
@@ -111,7 +111,7 @@ export default {
           ]
         },
         {
-          color: '#eae7be',
+          color: '#679499',
           date: '2017',
           title: '',
           description: [
@@ -119,7 +119,7 @@ export default {
           ]
         },
         {
-          color: '#004C54',
+          color: '#9ab7bb',
           date: '2018',
           title: '',
           description: [
@@ -127,7 +127,7 @@ export default {
           ]
         },
         {
-          color: '#E5E0AE',
+          color: '#9ab7bb',
           date: '2019',
           title: '',
           description: [
@@ -135,7 +135,7 @@ export default {
           ]
         },
         {
-          color: '#347176',
+          color: '#9ab7bb',
           date: '2022',
           title: '',
           description: [
@@ -143,7 +143,7 @@ export default {
           ]
         },
         {
-          color: '#eae7be',
+          color: '#9ab7bb',
           date: '2023',
           title: '',
           description: [
@@ -151,7 +151,7 @@ export default {
           ]
         },
         {
-          color: '#004C54',
+          color: '#9ab7bb',
           date: '2024',
           title: '',
           description: [

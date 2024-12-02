@@ -131,12 +131,13 @@ export default {
                               "
                               :aria-controls="'collapse' + achievement.id"
                             >
-                              {{ achievement.name }}
                               <a
                                 v-if="achievement.link != null"
                                 @click="redirect(achievement.link)"
-                                >&nbsp; رابط</a
+                                >{{ achievement.name }}</a
                               >
+
+                              <span v-else>{{ achievement.name }}</span>
                             </button>
                           </h2>
                           <div
@@ -176,7 +177,7 @@ export default {
                             :key="award.id"
                           >
                             <div class="portfolio-grid-caption">
-                              <div class="single-portfolio__thumbnail">
+                              <div class="single-portfolio__thumbnail award">
                                 <img
                                   class="img-fluid"
                                   :src="award.image_url"

@@ -32,7 +32,7 @@ export default {
   <header :class="{ open: isMenuOpen, 'is-sticky': isSticky }" class="header">
     <div class="container">
       <div class="logo">
-        <img src="../assets/img/logo.png" alt="Logo" />
+        <a href="/"><img src="../assets/img/logo/logo.png" alt="Logo" /></a>
       </div>
       <nav class="nav">
         <ul>
@@ -51,15 +51,15 @@ export default {
                   >دليل المؤسسات والمراكز القرآنية</a
                 >
               </li>
-              <li><a class="link" href="/soiaress">الأمسيات القرآنية</a></li>
+              <li><a class="link" href="/courses">التدريب والتأهيل</a></li>
+              <li><a class="link" href="/soirees">الأمسيات القرآنية</a></li>
               <li>
                 <a class="link" href="/competitions">المسابقات القرآنية</a>
               </li>
               <li>
-                <a class="link" href="/poetries">فرق التواشيج النسائية</a>
+                <a class="link" href="/poetries">فرق التواشيح النسائية</a>
               </li>
               <li><a class="link" href="/characters">الشخصيات القرآنية</a></li>
-              <li><a class="link" href="/courses">التدريب والتأهيل</a></li>
             </ul>
           </li>
           <li><a class="link" href="/timeline">سجل الحراك القرآني</a></li>

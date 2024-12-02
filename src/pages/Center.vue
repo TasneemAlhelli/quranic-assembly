@@ -56,17 +56,21 @@ export default {
       <div class="blog-pages-wrapper section-space--ptb_30">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
-              <div class="portfolio-details-one-images">
+            <div class="col-lg-4 col-sm-6">
+              <div class="portfolio-details-one-images align-center">
                 <img
-                  class="img-fluid border-radus-5"
-                  src="@/assets/img/centers-default.png"
+                  class="img-fluid border-radus-5 mb-30"
+                  :src="
+                    center.image_url != null
+                      ? center.image_url
+                      : require('@/assets/img/default/centers-default.png')
+                  "
                   alt="center logo"
                 />
               </div>
             </div>
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 col-sm-6">
               <div class="main-blog-wrap">
                 <div class="single-blog-item">
                   <div class="post-info lg-blog-post-info wow move-up">
@@ -152,10 +156,14 @@ export default {
                           target="_blank"
                           aria-label="Instagram"
                           :href="'https://instagram.com/' + center.instagram"
+                          v-if="center.instagram"
                         >
                           {{ center.instagram }}
                           <i class="fab fa-instagram"></i>
                         </a>
+                        <span class="value hint--bounce hint--primary" v-else
+                          >-</span
+                        >
                       </li>
                     </ul>
                   </div>
