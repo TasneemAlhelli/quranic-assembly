@@ -25,7 +25,13 @@ export default {
               <a
                 href="tel:37797911"
                 class="hover-style-link hover-style-link--white"
-                >37797911 | 39727915</a
+                >37797911</a
+              >
+              |
+              <a
+                href="tel:39727915"
+                class="hover-style-link hover-style-link--white"
+                >39727915</a
               >
               <br />
               <a
